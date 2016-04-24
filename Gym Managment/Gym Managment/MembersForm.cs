@@ -35,7 +35,7 @@ namespace Gym_Managment
                     break;
                 }
             }
-            membersList.Items.Remove(membersList.SelectedIndex);
+            membersList.Items.Remove(membersList.SelectedItem);
             membersCountLbl.Text = Members.GetCount().ToString();
             ResetAll();
         }

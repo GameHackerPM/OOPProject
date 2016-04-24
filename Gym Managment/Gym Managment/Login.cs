@@ -23,7 +23,7 @@ namespace Gym_Managment
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            if (UNtxt.Text == Program.Username)//Edit
+            if (UNtxt.Text == Program.Username)
             {
                 if (PWtxt.Text == Program.Password)
                 {

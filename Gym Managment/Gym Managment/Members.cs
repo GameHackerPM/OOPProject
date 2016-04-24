@@ -14,7 +14,6 @@ namespace Gym_Managment
         public int Contact_No, PlanType;
         public DateTime DateOfJoining;
         public double Amount;
-        private static int Count = 0;
         public Transactions Transaction;
         #endregion
 
@@ -28,7 +27,6 @@ namespace Gym_Managment
             this.Amount = Amount;
             this.DateOfJoining = DateOfJoining;
             Contact_No = ContactNumber;
-            Count++;
             Transaction = new Transactions(this);
         }
 
@@ -39,7 +37,7 @@ namespace Gym_Managment
 
         public static int GetCount()
         {
-            return Count;
+            return Program.MembersList.Count;
         }
     }
 }
