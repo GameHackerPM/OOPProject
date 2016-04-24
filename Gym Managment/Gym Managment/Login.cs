@@ -23,23 +23,13 @@ namespace Gym_Managment
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            bool ValidUsername = true;
-            bool ValidPassword = true;
-            //foreach (Employee emp in Program.EmpList)
-            //{
-            //    if (emp.Username == UNtxt.Text && emp.Password == PWtxt.Text)
-            //    {
-            //        ValidUsername = true;
-            //        ValidPassword = true;
-            //    }
-            //    if (emp.Username == UNtxt.Text)
-            //        ValidUsername = true;
-            //}
-            if (ValidUsername == true)//true?
+            if (UNtxt.Text == Program.Username)
             {
-                if (ValidPassword == true)
+                if (PWtxt.Text == Program.Password)
                 {
-                    MessageBox.Show("Logged in successfully!");
+                    //MessageBox.Show("Logged in successfully!");
+                    new Main().Show();
+                    this.Hide();
                 }
                 else
                     MessageBox.Show("Password is wrong!");
