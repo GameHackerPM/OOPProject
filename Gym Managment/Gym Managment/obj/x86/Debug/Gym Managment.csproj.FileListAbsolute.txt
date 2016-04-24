@@ -21,3 +21,6 @@ C:\Users\heba gamal\Desktop\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug
 C:\Users\heba gamal\Desktop\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Login.resources
 C:\Users\heba gamal\Desktop\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Properties.Resources.resources
 C:\Users\heba gamal\Desktop\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.csproj.GenerateResource.Cache
+C:\Users\heba gamal\Desktop\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.AboutUs.resources
+C:\Users\heba gamal\Desktop\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Main.resources
+C:\Users\heba gamal\Desktop\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.MembersForm.resources
