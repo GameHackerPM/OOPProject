@@ -11,7 +11,7 @@ namespace Gym_Managment
         public static string Password = "admin";
 
 
-        //Edited by heba
+        //HFDGJHGJ,
 
         #region Lists/Database
         public static List<Members> MembersList = new List<Members>();
