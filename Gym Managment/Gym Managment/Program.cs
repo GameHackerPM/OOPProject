@@ -10,9 +10,6 @@ namespace Gym_Managment
         public static string Username = "admin";
         public static string Password = "admin";
 
-
-        //HFDGJHGJ,
-
         #region Lists/Database
         public static List<Members> MembersList = new List<Members>();
         public static List<Transactions> TransactionsList = new List<Transactions>();
