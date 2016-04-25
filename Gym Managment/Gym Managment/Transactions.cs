@@ -12,7 +12,7 @@ namespace Gym_Managment
         public int ID { get; private set; }
         public string MemberName;
         public int MemberID;
-        private double _amount;
+        private double _amount = 0;
         public double Amount
         {
             get
@@ -22,7 +22,8 @@ namespace Gym_Managment
             set
             {
                 _amount = value;
-                Member.Amount += value;
+                if (Member != null)
+                    Member.Amount += value;
             }
         }
         public DateTime DateOfPay;
@@ -32,6 +33,7 @@ namespace Gym_Managment
         public Transactions(Members Member)
         {
             ID = GetNextID();
+            this.Member = Member;
             MemberName = Member.FirstName + " " + Member.LastName;
             MemberID = Member.ID;
         }
@@ -39,6 +41,7 @@ namespace Gym_Managment
         public Transactions(Members Member, double Amount, DateTime DateOfPay)
         {
             ID = GetNextID();
+            this.Member = Member;
             MemberName = Member.FirstName + " " + Member.LastName;
             MemberID = Member.ID;
             this.Amount = Amount;

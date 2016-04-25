@@ -156,7 +156,6 @@
             this.label4.Size = new System.Drawing.Size(84, 17);
             this.label4.TabIndex = 7;
             this.label4.Text = "First Name :";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // lastnameTxt
             // 
@@ -255,13 +254,11 @@
             // 
             this.amountTxt.BackColor = System.Drawing.SystemColors.InactiveBorder;
             this.amountTxt.Location = new System.Drawing.Point(424, 379);
-            this.amountTxt.Multiline = true;
             this.amountTxt.Name = "amountTxt";
             this.amountTxt.Size = new System.Drawing.Size(109, 22);
             this.amountTxt.TabIndex = 20;
-            this.amountTxt.Text = "$0";
             this.amountTxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.amountTxt.TextChanged += new System.EventHandler(this.amountTxt_TextChanged);
+            this.amountTxt.Leave += new System.EventHandler(this.amountTxt_Leave);
             // 
             // label10
             // 
@@ -280,6 +277,7 @@
             this.addBtn.TabIndex = 21;
             this.addBtn.Text = "Add";
             this.addBtn.UseVisualStyleBackColor = true;
+            this.addBtn.Click += new System.EventHandler(this.addBtn_Click);
             // 
             // saveBtn
             // 

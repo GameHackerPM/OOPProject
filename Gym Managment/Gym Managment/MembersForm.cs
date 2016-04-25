@@ -42,17 +42,14 @@ namespace Gym_Managment
 
         private void ResetAll()
         {
-
-        }
-
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void amountTxt_TextChanged(object sender, EventArgs e)
-        {
-            //amountTxt.Text = string.Format("{0:C}", Convert.ToInt32(amountTxt.Text)); 
+            idTxt.Text = "";
+            firstnameTxt.Text = "";
+            lastnameTxt.Text = "";
+            contactnoTxt.Text = "01";
+            addressTxt.Text = "";
+            dateofjoiningDate.Value = DateTime.Now;
+            plantypeCombo.Text = "";
+            amountTxt.Text = "$0.00";
         }
 
         private void resetBtn_Click(object sender, EventArgs e)
@@ -79,13 +76,84 @@ namespace Gym_Managment
                     idTxt.Text = selectedMember.ID.ToString();
                     firstnameTxt.Text = selectedMember.FirstName;
                     lastnameTxt.Text = selectedMember.LastName;
-                    contactnoTxt.Text = selectedMember.Contact_No.ToString();
+                    contactnoTxt.Text = "0" + selectedMember.Contact_No.ToString();
                     addressTxt.Text = selectedMember.Address;
                     dateofjoiningDate.Value = selectedMember.DateOfJoining;
                     plantypeCombo.SelectedIndex = selectedMember.PlanType - 1;
                     amountTxt.Text = string.Format("{0:C}", selectedMember.Amount);
+                    break;
                 }
             }
+        }
+
+        private void amountTxt_Leave(object sender, EventArgs e)
+        {
+            //try
+            //{
+            //    double value = amountTxt.Text == string.Empty ? 0 : Convert.ToInt32(amountTxt.Text.Replace("$", "").Replace(",",""));
+            //    amountTxt.Text = string.Format("{0:C}", value);
+
+            //}
+            //catch
+            //{
+            //    amountTxt.Text = string.Format("{0:C}", 0);
+            //}
+
+            if (amountTxt.Text.Contains("$"))
+                amountTxt.Text = "$" + amountTxt.Text;
+        }
+
+        private void addBtn_Click(object sender, EventArgs e)
+        {
+            //double amo = double.Parse(amountTxt.Text.Replace("$", "").Replace(".", "").Remove(amountTxt.Text.IndexOf(amountTxt.Text.Length - 2))));
+            //MessageBox.Show(amo.ToString());
+            if (firstnameTxt.Text == string.Empty)
+            {
+                MessageBox.Show("Please enter member's First Name!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (lastnameTxt.Text == string.Empty)
+            {
+                MessageBox.Show("Please enter member's Last Name!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+            if (contactnoTxt.Text != string.Empty)
+            {
+                try
+                {
+                    int value = Convert.ToInt32(contactnoTxt.Text);
+                }
+                catch
+                {
+                    MessageBox.Show("Please enter member's valid Contact Number!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    return;
+                }
+            }
+            else
+            {
+                MessageBox.Show("Please enter member's Contact Number!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (addressTxt.Text == string.Empty)
+            {
+                MessageBox.Show("Please enter member's Address!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            if (plantypeCombo.Text == "")
+            {
+                MessageBox.Show("Please choose one type of Plan Types!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return;
+            }
+
+            
+
+            Members NewMember = new Members(firstnameTxt.Text, lastnameTxt.Text, Convert.ToInt32(contactnoTxt.Text), addressTxt.Text, 1, 1, dateofjoiningDate.Value);
+
+            Program.MembersList.Add(NewMember);
+            membersCountLbl.Text = Members.GetCount().ToString();
+            membersList.Items.Add(NewMember.FirstName + " " + NewMember.LastName);
         }
     }
 }
