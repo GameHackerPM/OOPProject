@@ -26,6 +26,11 @@ namespace Gym_Managment
            Schedule = schedule;          
         }
 
+        public static int GetCount()
+        {
+            return Program.InstructorsList.Count ;
+        }
+        
       
     }
 }
