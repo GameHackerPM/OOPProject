@@ -16,6 +16,8 @@ namespace Gym_Managment
         //public static List<Suppliers> SupplierList = new List<Suppliers>();
         public static List<Instructor> InstructorsList = new List<Instructor>();
         public static List<Equipment> EquipmentsList = new List<Equipment>();
+        public static List<Supplier> SupplierList = new List<Supplier>();
+        public static List<Plan_Courses> Plan_CoursesList = new List<Plan_Courses>();
         #endregion
 
         /// <summary>
@@ -42,6 +44,17 @@ namespace Gym_Managment
             Equipment E2 = new Equipment("ElectricTreadmill", 13, 1200, DateTime.Now, "fitenss_company");
             EquipmentsList.Add(E1);
             EquipmentsList.Add(E2);
+
+
+            Supplier s1 = new Supplier("mariam", 01111695040, "cairo", " toshiba", 1);
+            Supplier s2 = new Supplier("aya", 0101050304, "alharm", "sharp", 1);
+            SupplierList.Add(s1);
+            SupplierList.Add(s2);
+
+            Plan_Courses p1 = new Plan_Courses (10, 1000,"sport_company");
+            Plan_Courses p2 = new Plan_Courses (13, 1200, "fitenss_company");
+            Plan_CoursesList.Add(p1);
+            Plan_CoursesList.Add(p2);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

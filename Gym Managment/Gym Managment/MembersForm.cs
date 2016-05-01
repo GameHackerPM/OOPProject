@@ -99,7 +99,7 @@ namespace Gym_Managment
             //    amountTxt.Text = string.Format("{0:C}", 0);
             //}
 
-            if (amountTxt.Text.Contains("$"))
+            if (!amountTxt.Text.Contains("$"))
                 amountTxt.Text = "$" + amountTxt.Text;
         }
 

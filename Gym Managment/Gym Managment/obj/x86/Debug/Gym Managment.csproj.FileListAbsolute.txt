@@ -27,3 +27,14 @@ C:\Users\heba gamal\Desktop\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug
 E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.AboutUs.resources
 E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Main.resources
 E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.MembersForm.resources
+C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.exe
+C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.pdb
+C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym Managment\bin\Debug\Gym Managment.exe
+C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym Managment\bin\Debug\Gym Managment.pdb
+C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.csprojResolveAssemblyReference.cache
+C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.AboutUs.resources
+C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Login.resources
+C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Main.resources
+C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.MembersForm.resources
+C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Properties.Resources.resources
+C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.csproj.GenerateResource.Cache
