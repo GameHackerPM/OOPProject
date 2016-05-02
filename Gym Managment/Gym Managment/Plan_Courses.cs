@@ -17,7 +17,7 @@ namespace Gym_Managment
         public Plan_Courses(string planname ,int plantype, double amount, string details)
         {
             ID = GetNextID();
-            this.planname = planename;
+            this.planname = planname;
             this.plantype = plantype;
             this.amount = amount;
             this.details = details;
