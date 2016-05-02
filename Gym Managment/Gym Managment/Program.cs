@@ -51,8 +51,8 @@ namespace Gym_Managment
             SupplierList.Add(s1);
             SupplierList.Add(s2);
 
-            Plan_Courses p1 = new Plan_Courses (10, 1000,"sport_company");
-            Plan_Courses p2 = new Plan_Courses (13, 1200, "fitenss_company");
+            Plan_Courses p1 = new Plan_Courses("sauna course", 1, 32.43 ,"details1");
+            Plan_Courses p2 = new Plan_Courses("Aaroopeix course", 2,98.65, "details2");
             Plan_CoursesList.Add(p1);
             Plan_CoursesList.Add(p2);
 
