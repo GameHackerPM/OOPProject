@@ -30,7 +30,12 @@ namespace Gym_Managment
         {
             return Program.InstructorsList.Count ;
         }
-        
-      
+
+        public enum ScheduleTypes
+        {
+            Morning = 0,
+            Evening = 1,
+            FullDay = 2
+        }
     }
 }

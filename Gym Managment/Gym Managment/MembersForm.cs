@@ -85,7 +85,7 @@ namespace Gym_Managment
                 }
             }
         }
-
+        
         private void amountTxt_Leave(object sender, EventArgs e)
         {
             //try
@@ -149,11 +149,16 @@ namespace Gym_Managment
 
             
 
-            Members NewMember = new Members(firstnameTxt.Text, lastnameTxt.Text, Convert.ToInt32(contactnoTxt.Text), addressTxt.Text, 1, 1, dateofjoiningDate.Value);
+            Members NewMember = new Members(firstnameTxt.Text, lastnameTxt.Text, Convert.ToInt32(contactnoTxt.Text), addressTxt.Text, plantypeCombo.SelectedIndex + 1, 1, dateofjoiningDate.Value);
 
             Program.MembersList.Add(NewMember);
             membersCountLbl.Text = Members.GetCount().ToString();
             membersList.Items.Add(NewMember.FirstName + " " + NewMember.LastName);
+        }
+
+        private void addressTxt_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

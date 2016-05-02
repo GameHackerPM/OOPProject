@@ -33,12 +33,15 @@ namespace Gym_Managment
             MembersList.Add(new Members("Heba", "Gamal", 0106541654, "18 Street Elmo3az Mohamed, Giza, Egypt.", 2, 2654, DateTime.Now.AddMonths(1)));
             MembersList.Add(new Members("Hanaa", "Salem", 0106216578, "3 Street Korba Street, Shobra, Egypt.", 1, 1548, DateTime.Now.AddMonths(3)));
             
-            Instructor I1 = new Instructor("gamal", "soliman", "14street elrahma", 011596556, 900, DateTime.Now, 1);
-            Instructor I2 = new Instructor("samy", "baher", "14street elsafa", 0115968496, 1200, DateTime.Now, 0);
-            Instructor I3 = new Instructor("ibrahim", "samir", "14street elmarwa", 012759496, 4000, DateTime.Now, 2);
+            Instructor I1 = new Instructor("Aya", "Khaled", "14street elrahma", 011596556, 900, DateTime.Now.AddMonths(4), (int)Instructor.ScheduleTypes.Evening);
+            Instructor I2 = new Instructor("Heba", "Gamal", "14street elsafa", 0115968496, 1200, DateTime.Now.AddYears(1), (int)Instructor.ScheduleTypes.FullDay);
+            Instructor I3 = new Instructor("Ahmed", "Osama", "14street elmarwa", 012759496, 4000, DateTime.Now.AddDays(15), (int)Instructor.ScheduleTypes.Morning);
+            Instructor I4 = new Instructor("wafaa", "mohamed", "17street elasher ", 0127254896, 2000, DateTime.Now.AddHours(23), (int)Instructor.ScheduleTypes.FullDay);
             InstructorsList.Add(I1);
             InstructorsList.Add(I2);
             InstructorsList.Add(I3);
+            InstructorsList.Add(I4);
+
            
             Equipment E1 = new Equipment("WheelSport1", 10, 1000, DateTime.Now.AddMonths(1),"sport_company");
             Equipment E2 = new Equipment("ElectricTreadmill", 13, 1200, DateTime.Now, "fitenss_company");

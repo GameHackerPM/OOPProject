@@ -58,5 +58,10 @@ namespace Gym_Managment
         {
             new MembersForm().Show();
         }
+
+        private void instructorBtn_Click(object sender, EventArgs e)
+        {
+            new InstructorForm().Show();
+        }
     }
 }

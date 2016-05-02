@@ -38,3 +38,4 @@ C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym M
 C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.MembersForm.resources
 C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Properties.Resources.resources
 C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.csproj.GenerateResource.Cache
+C:\Users\heba gamal\Desktop\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.InstructorForm.resources
