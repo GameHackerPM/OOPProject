@@ -22,6 +22,11 @@ namespace Gym_Managment
             {
                 membersList.Items.Add(member.FirstName + " " + member.LastName);
             }
+            foreach (Plan_Courses plan in Program.Plan_CoursesList)
+            {
+                plantypeCombo.Items.Add(plan.planname);
+            }
+            plantypeCombo.SelectedIndex = 0;
             membersCountLbl.Text = Members.GetCount().ToString();
         }
 
@@ -140,14 +145,6 @@ namespace Gym_Managment
                 MessageBox.Show("Please enter member's Address!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return;
             }
-
-            if (plantypeCombo.Text == "")
-            {
-                MessageBox.Show("Please choose one type of Plan Types!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return;
-            }
-
-            
 
             Members NewMember = new Members(firstnameTxt.Text, lastnameTxt.Text, Convert.ToInt32(contactnoTxt.Text), addressTxt.Text, plantypeCombo.SelectedIndex + 1, 1, dateofjoiningDate.Value);
 

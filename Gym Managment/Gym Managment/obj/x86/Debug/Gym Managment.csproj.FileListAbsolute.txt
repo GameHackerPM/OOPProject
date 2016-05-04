@@ -39,3 +39,7 @@ C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym M
 C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Properties.Resources.resources
 C:\Users\nahla\Downloads\OOPProject-master\OOPProject-master\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.csproj.GenerateResource.Cache
 C:\Users\heba gamal\Desktop\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.InstructorForm.resources
+E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.InstructorForm.resources
+E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.TransactionsForm.resources
+E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.MembersShowAll.resources
+E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.TransactionsShowAll.resources

@@ -38,6 +38,7 @@ namespace Gym_Managment
                 InstructorListBox.Items.Add(instructor.FirstName + " " + instructor.LastName);
 
             }
+            Schdule_Combo.SelectedIndex = 0;
             InCountLb.Text = Program.InstructorsList.Count.ToString();
         }
 

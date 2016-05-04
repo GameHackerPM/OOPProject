@@ -32,7 +32,12 @@ namespace Gym_Managment
             MembersList.Add(new Members("Mariam", "Ossama", 0106985414, "3 Street Alhakam baamr allah, Shobra, Egypt.", 3, 2154, DateTime.Now.AddMonths(4)));
             MembersList.Add(new Members("Heba", "Gamal", 0106541654, "18 Street Elmo3az Mohamed, Giza, Egypt.", 2, 2654, DateTime.Now.AddMonths(1)));
             MembersList.Add(new Members("Hanaa", "Salem", 0106216578, "3 Street Korba Street, Shobra, Egypt.", 1, 1548, DateTime.Now.AddMonths(3)));
-            
+
+            TransactionsList.Add(new Transactions(MembersList[0], 10100, DateTime.Now));
+            TransactionsList.Add(new Transactions(MembersList[1], 2154, DateTime.Now.AddMonths(4)));
+            TransactionsList.Add(new Transactions(MembersList[2], 2654, DateTime.Now.AddMonths(1)));
+            TransactionsList.Add(new Transactions(MembersList[3], 1548, DateTime.Now.AddMonths(3)));
+
             Instructor I1 = new Instructor("Aya", "Khaled", "14street elrahma", 011596556, 900, DateTime.Now.AddMonths(4), (int)Instructor.ScheduleTypes.Evening);
             Instructor I2 = new Instructor("Heba", "Gamal", "14street elsafa", 0115968496, 1200, DateTime.Now.AddYears(1), (int)Instructor.ScheduleTypes.FullDay);
             Instructor I3 = new Instructor("Ahmed", "Osama", "14street elmarwa", 012759496, 4000, DateTime.Now.AddDays(15), (int)Instructor.ScheduleTypes.Morning);
@@ -56,8 +61,10 @@ namespace Gym_Managment
 
             Plan_Courses p1 = new Plan_Courses("sauna course", 1, 32.43 ,"details1");
             Plan_Courses p2 = new Plan_Courses("Aaroopeix course", 2,98.65, "details2");
+            Plan_Courses p3 = new Plan_Courses("BodyBuilding course", 3, 98.65, "details3");
             Plan_CoursesList.Add(p1);
             Plan_CoursesList.Add(p2);
+            Plan_CoursesList.Add(p3);
 
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);

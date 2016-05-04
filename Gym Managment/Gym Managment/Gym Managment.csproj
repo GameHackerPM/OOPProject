@@ -82,11 +82,29 @@
     <Compile Include="MembersForm.Designer.cs">
       <DependentUpon>MembersForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="MembersShowAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MembersShowAll.Designer.cs">
+      <DependentUpon>MembersShowAll.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plan_Courses.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Supplier.cs" />
     <Compile Include="Transactions.cs" />
+    <Compile Include="TransactionsForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionsForm.Designer.cs">
+      <DependentUpon>TransactionsForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TransactionsShowAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TransactionsShowAll.Designer.cs">
+      <DependentUpon>TransactionsShowAll.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="AboutUs.resx">
       <DependentUpon>AboutUs.cs</DependentUpon>
     </EmbeddedResource>
@@ -102,6 +120,9 @@
     <EmbeddedResource Include="MembersForm.resx">
       <DependentUpon>MembersForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="MembersShowAll.resx">
+      <DependentUpon>MembersShowAll.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -112,6 +133,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="TransactionsForm.resx">
+      <DependentUpon>TransactionsForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TransactionsShowAll.resx">
+      <DependentUpon>TransactionsShowAll.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>

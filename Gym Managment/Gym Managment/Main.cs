@@ -63,5 +63,25 @@ namespace Gym_Managment
         {
             new InstructorForm().Show();
         }
+
+        private void transactionBtn_Click(object sender, EventArgs e)
+        {
+            new TransactionsForm().Show();
+        }
+
+        private void addToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            new TransactionsForm().Show();
+        }
+
+        private void showAllToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new MembersShowAll().Show();
+        }
+
+        private void showAllToolStripMenuItem5_Click(object sender, EventArgs e)
+        {
+            new TransactionsShowAll().Show();
+        }
     }
 }
