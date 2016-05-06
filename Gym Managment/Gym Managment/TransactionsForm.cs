@@ -44,7 +44,8 @@ namespace Gym_Managment
                 }
 
             }
-            var SelectedMemeber = Program.MembersList.FirstOrDefault(p=> p.ID == Convert.ToInt32(idTxt.Text));
+
+            Members SelectedMemeber = Program.MembersList.FirstOrDefault(p=> p.ID == Convert.ToInt32(idTxt.Text));
             if (SelectedMemeber == null)
             {
                 MessageBox.Show("Couldn't find this member ID in database, please check it again!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);

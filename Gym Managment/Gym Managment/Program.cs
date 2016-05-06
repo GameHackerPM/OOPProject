@@ -18,6 +18,8 @@ namespace Gym_Managment
         public static List<Equipment> EquipmentsList = new List<Equipment>();
         public static List<Supplier> SupplierList = new List<Supplier>();
         public static List<Plan_Courses> Plan_CoursesList = new List<Plan_Courses>();
+        public static List<Employee> EmployeesList = new List<Employee>();
+
         #endregion
 
         /// <summary>
@@ -46,6 +48,20 @@ namespace Gym_Managment
             InstructorsList.Add(I2);
             InstructorsList.Add(I3);
             InstructorsList.Add(I4);
+
+            Employee Emp1 = new Employee("Mohamed", "Mostafa", "12street elwafaa", 018865856, 5000, DateTime.Now.AddDays(12));
+            Employee Emp2 = new Employee("Ramy", "Ayman", "13street eldegwy", 018648951, 1100, DateTime.Now);
+            Employee Emp3 = new Employee("Alaa", "Mohamed", "19street elfayz", 018613794, 1200, DateTime.Now.AddMonths(2));
+            Employee Emp4 = new Employee("Ahlam", "Ali", "20street elmo3z", 010579243,2300, DateTime.Now);
+            Employee Emp5 = new Employee("Basant", "taye3", "19street elfayz", 018613794, 1200, DateTime.Now.AddYears(1));
+
+            EmployeesList.Add(Emp1);
+            EmployeesList.Add(Emp2);
+            EmployeesList.Add(Emp3);
+            EmployeesList.Add(Emp4);
+            EmployeesList.Add(Emp5);
+
+
 
            
             Equipment E1 = new Equipment("WheelSport1", 10, 1000, DateTime.Now.AddMonths(1),"sport_company");

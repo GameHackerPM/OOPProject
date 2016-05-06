@@ -83,5 +83,12 @@ namespace Gym_Managment
         {
             new TransactionsShowAll().Show();
         }
+
+        private void EmployeeBtn_Click(object sender, EventArgs e)
+        {
+            new EmployeeForm().Show();
+        }
+
+        
     }
 }
