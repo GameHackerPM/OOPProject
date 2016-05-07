@@ -89,6 +89,31 @@ namespace Gym_Managment
             new EmployeeForm().Show();
         }
 
+        private void addToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new MembersForm().Show();
+        }
+
+        private void addToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new InstructorForm().Show();
+        }
+
+        private void controlToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            new EmployeeForm().Show();
+        }
+
+        private void showAllToolStripMenuItem2_Click(object sender, EventArgs e)
+        {
+            new InstructorShowAll().Show();
+        }
+
+        private void showAllToolStripMenuItem6_Click(object sender, EventArgs e)
+        {
+            new EmployeeShowAll().Show();
+        }
+
         
     }
 }

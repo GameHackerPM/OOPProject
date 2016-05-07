@@ -62,6 +62,12 @@
     <Compile Include="EmployeeForm.Designer.cs">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="EmployeeShowAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="EmployeeShowAll.Designer.cs">
+      <DependentUpon>EmployeeShowAll.cs</DependentUpon>
+    </Compile>
     <Compile Include="Equipment.cs" />
     <Compile Include="Instructor.cs" />
     <Compile Include="InstructorForm.cs">
@@ -69,6 +75,12 @@
     </Compile>
     <Compile Include="InstructorForm.Designer.cs">
       <DependentUpon>InstructorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InstructorShowAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InstructorShowAll.Designer.cs">
+      <DependentUpon>InstructorShowAll.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
       <SubType>Form</SubType>
@@ -118,8 +130,14 @@
     <EmbeddedResource Include="EmployeeForm.resx">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="EmployeeShowAll.resx">
+      <DependentUpon>EmployeeShowAll.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="InstructorForm.resx">
       <DependentUpon>InstructorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InstructorShowAll.resx">
+      <DependentUpon>InstructorShowAll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
       <DependentUpon>Login.cs</DependentUpon>

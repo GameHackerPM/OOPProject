@@ -9,14 +9,14 @@ using System.Windows.Forms;
 
 namespace Gym_Managment
 {
-    public partial class MembersShowAll : Form
+    public partial class InstructorShowAll : Form
     {
-        public MembersShowAll()
+        public InstructorShowAll()
         {
             InitializeComponent();
         }
 
-        private void MembersShowAll_Load(object sender, EventArgs e)
+        private void InstructorShowAll_Load(object sender, EventArgs e)
         {
             modeCombo.SelectedIndex = 0;
 
@@ -26,20 +26,33 @@ namespace Gym_Managment
             dt.Columns.Add("Name");
             dt.Columns.Add("Contact Number");
             dt.Columns.Add("Address");
-            dt.Columns.Add("Plan Type");
-            dt.Columns.Add("JoiningDate");
-            dt.Columns.Add("Amount");
+            dt.Columns.Add("DateOfJoining");
+            dt.Columns.Add("Salary");
+            dt.Columns.Add("Schedule");
 
-            foreach (Members member in Program.MembersList)
+            foreach (Instructor instructor in Program.InstructorsList)
             {
                 DataRow row = dt.NewRow();
-                row["ID"] = member.ID.ToString();
-                row["Name"] = member.FirstName + " " + member.LastName;
-                row["Contact Number"] = "0" + member.Contact_No.ToString();
-                row["Address"] = member.Address;
-                row["Plan Type"] = member.PlanType.ToString();
-                row["JoiningDate"] = member.DateOfJoining.ToString("dd/MM/yyy");
-                row["Amount"] = string.Format("{0:C}", member.Amount);
+                row["ID"] = instructor.ID.ToString();
+                row["Name"] = instructor.FirstName + " " + instructor.LastName;
+                row["Contact Number"] = "0" + instructor.ContactNo.ToString();
+                row["Address"] = instructor.Address;
+                row["DateOfJoining"] = instructor.DateOfJoining.ToString("dd/MM/yyy");
+                row["Salary"] = string.Format("{0:C}", instructor.Salary);
+                string schedule = "";
+                switch (instructor.Schedule)
+                {
+                    case (int)Instructor.ScheduleTypes.Evening:
+                        schedule = "Evening";
+                        break;
+                    case (int)Instructor.ScheduleTypes.FullDay:
+                        schedule = "Full Day";
+                        break;
+                    case (int)Instructor.ScheduleTypes.Morning:
+                        schedule="Morning";
+                        break;
+                }
+                row["Schedule"] = schedule;
                 dt.Rows.Add(row);
             }
             dataGridView1.DataSource = dt;
@@ -51,6 +64,8 @@ namespace Gym_Managment
                 colored = !colored;
             }
         }
+
+        
 
         private void searchBtn_Click(object sender, EventArgs e)
         {
@@ -64,7 +79,7 @@ namespace Gym_Managment
                     SelectedColumn = "Name";
                     break;
                 case 2:
-                    SelectedColumn = "JoiningDate";
+                    SelectedColumn = "DateOfJoining";
                     break;
             }
             BindingSource bs = new BindingSource();
@@ -97,6 +112,8 @@ namespace Gym_Managment
             }
         }
 
-       
+      
+
+        
     }
 }

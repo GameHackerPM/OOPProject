@@ -41,9 +41,10 @@
             // 
             // searchTxt
             // 
-            this.searchTxt.Location = new System.Drawing.Point(346, 24);
+            this.searchTxt.Location = new System.Drawing.Point(260, 20);
+            this.searchTxt.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchTxt.Name = "searchTxt";
-            this.searchTxt.Size = new System.Drawing.Size(184, 22);
+            this.searchTxt.Size = new System.Drawing.Size(139, 20);
             this.searchTxt.TabIndex = 0;
             // 
             // modeCombo
@@ -54,16 +55,18 @@
             "ID",
             "Name",
             "Date"});
-            this.modeCombo.Location = new System.Drawing.Point(278, 23);
+            this.modeCombo.Location = new System.Drawing.Point(208, 19);
+            this.modeCombo.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.modeCombo.Name = "modeCombo";
-            this.modeCombo.Size = new System.Drawing.Size(62, 24);
+            this.modeCombo.Size = new System.Drawing.Size(48, 21);
             this.modeCombo.TabIndex = 1;
-            // 
+            //
             // searchBtn
             // 
-            this.searchBtn.Location = new System.Drawing.Point(536, 23);
+            this.searchBtn.Location = new System.Drawing.Point(402, 19);
+            this.searchBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(75, 25);
+            this.searchBtn.Size = new System.Drawing.Size(56, 20);
             this.searchBtn.TabIndex = 2;
             this.searchBtn.Text = "Search";
             this.searchBtn.UseVisualStyleBackColor = true;
@@ -71,9 +74,10 @@
             // 
             // clearBtn
             // 
-            this.clearBtn.Location = new System.Drawing.Point(658, 23);
+            this.clearBtn.Location = new System.Drawing.Point(494, 19);
+            this.clearBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.clearBtn.Name = "clearBtn";
-            this.clearBtn.Size = new System.Drawing.Size(116, 25);
+            this.clearBtn.Size = new System.Drawing.Size(87, 20);
             this.clearBtn.TabIndex = 3;
             this.clearBtn.Text = "Clear Filter";
             this.clearBtn.UseVisualStyleBackColor = true;
@@ -84,12 +88,13 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(6, 54);
+            this.dataGridView1.Location = new System.Drawing.Point(4, 44);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(972, 391);
+            this.dataGridView1.Size = new System.Drawing.Size(729, 318);
             this.dataGridView1.TabIndex = 4;
             // 
             // groupBox1
@@ -99,21 +104,25 @@
             this.groupBox1.Controls.Add(this.modeCombo);
             this.groupBox1.Controls.Add(this.clearBtn);
             this.groupBox1.Controls.Add(this.searchBtn);
-            this.groupBox1.Location = new System.Drawing.Point(12, 12);
+            this.groupBox1.Location = new System.Drawing.Point(9, 10);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(984, 451);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.groupBox1.Size = new System.Drawing.Size(738, 366);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "All Members Data Information";
+           
             // 
             // MembersShowAll
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1008, 475);
+            this.ClientSize = new System.Drawing.Size(756, 386);
             this.Controls.Add(this.groupBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.MaximizeBox = false;
             this.Name = "MembersShowAll";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

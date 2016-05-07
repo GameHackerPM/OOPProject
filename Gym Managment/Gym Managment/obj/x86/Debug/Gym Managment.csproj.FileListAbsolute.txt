@@ -47,3 +47,5 @@ C:\Users\heba gamal\Desktop\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug
 C:\Users\heba gamal\Desktop\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.MembersShowAll.resources
 C:\Users\heba gamal\Desktop\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.TransactionsForm.resources
 C:\Users\heba gamal\Desktop\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.TransactionsShowAll.resources
+C:\Users\heba gamal\Desktop\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.InstructorShowAll.resources
+C:\Users\heba gamal\Desktop\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.EmployeeShowAll.resources

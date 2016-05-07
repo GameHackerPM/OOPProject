@@ -9,14 +9,14 @@ using System.Windows.Forms;
 
 namespace Gym_Managment
 {
-    public partial class MembersShowAll : Form
+    public partial class EmployeeShowAll : Form
     {
-        public MembersShowAll()
+        public EmployeeShowAll()
         {
             InitializeComponent();
         }
 
-        private void MembersShowAll_Load(object sender, EventArgs e)
+        private void EmployeeShowAll_Load(object sender, EventArgs e)
         {
             modeCombo.SelectedIndex = 0;
 
@@ -26,20 +26,18 @@ namespace Gym_Managment
             dt.Columns.Add("Name");
             dt.Columns.Add("Contact Number");
             dt.Columns.Add("Address");
-            dt.Columns.Add("Plan Type");
-            dt.Columns.Add("JoiningDate");
-            dt.Columns.Add("Amount");
+            dt.Columns.Add("DateOfJoining");
+            dt.Columns.Add("Salary");
 
-            foreach (Members member in Program.MembersList)
+            foreach (Employee employee in Program.EmployeesList)
             {
                 DataRow row = dt.NewRow();
-                row["ID"] = member.ID.ToString();
-                row["Name"] = member.FirstName + " " + member.LastName;
-                row["Contact Number"] = "0" + member.Contact_No.ToString();
-                row["Address"] = member.Address;
-                row["Plan Type"] = member.PlanType.ToString();
-                row["JoiningDate"] = member.DateOfJoining.ToString("dd/MM/yyy");
-                row["Amount"] = string.Format("{0:C}", member.Amount);
+                row["ID"] = employee.ID.ToString();
+                row["Name"] = employee.FirstName + " " + employee.LastName;
+                row["Contact Number"] = "0" + employee.Contact_num.ToString();
+                row["Address"] = employee.Address;
+                row["DateOfJoining"] = employee.DateOfJoining.ToString("dd/MM/yyy");
+                row["Salary"] = string.Format("{0:C}", employee.Salary);
                 dt.Rows.Add(row);
             }
             dataGridView1.DataSource = dt;
@@ -51,7 +49,6 @@ namespace Gym_Managment
                 colored = !colored;
             }
         }
-
         private void searchBtn_Click(object sender, EventArgs e)
         {
             string SelectedColumn = "";
@@ -64,7 +61,7 @@ namespace Gym_Managment
                     SelectedColumn = "Name";
                     break;
                 case 2:
-                    SelectedColumn = "JoiningDate";
+                    SelectedColumn = "DateOfJoining";
                     break;
             }
             BindingSource bs = new BindingSource();
@@ -96,7 +93,6 @@ namespace Gym_Managment
                 colored = !colored;
             }
         }
-
-       
     }
+    
 }
