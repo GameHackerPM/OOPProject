@@ -81,7 +81,7 @@ namespace Gym_Managment
 
         private void showAllToolStripMenuItem5_Click(object sender, EventArgs e)
         {
-            new TransactionsShowAll().Show();
+            new TransactionsShowAll().Show(); //ShowAll
         }
 
         private void EmployeeBtn_Click(object sender, EventArgs e)
