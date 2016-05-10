@@ -10,7 +10,7 @@ namespace Gym_Managment
         private static int LastID = 1;
         public int ID {get; private set; }
         public string FirstName, LastName, Address;
-        public string Username, Password; //ADD this !
+      //  public string Username, Password; //ADD this !
         public int Contact_num;
         public double Salary;
         public DateTime DateOfJoining;

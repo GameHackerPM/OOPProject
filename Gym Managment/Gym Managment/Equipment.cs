@@ -35,5 +35,9 @@ namespace Gym_Managment
             total_price = t * p;
             return total_price;
         }
+        public static int GetCount()
+        {
+            return Program.EquipmentsList.Count;
+        }
     }
 }

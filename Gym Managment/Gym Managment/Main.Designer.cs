@@ -125,6 +125,7 @@
             this.equipmentsBtn.TabIndex = 3;
             this.equipmentsBtn.Text = "Equipments";
             this.equipmentsBtn.UseVisualStyleBackColor = true;
+            this.equipmentsBtn.Click += new System.EventHandler(this.equipmentsBtn_Click);
             // 
             // supplierBtn
             // 
@@ -223,7 +224,7 @@
             // showAllToolStripMenuItem6
             // 
             this.showAllToolStripMenuItem6.Name = "showAllToolStripMenuItem6";
-            this.showAllToolStripMenuItem6.Size = new System.Drawing.Size(152, 22);
+            this.showAllToolStripMenuItem6.Size = new System.Drawing.Size(120, 22);
             this.showAllToolStripMenuItem6.Text = "Show All";
             this.showAllToolStripMenuItem6.Click += new System.EventHandler(this.showAllToolStripMenuItem6_Click);
             // 
@@ -298,19 +299,19 @@
             // addToolStripMenuItem2
             // 
             this.addToolStripMenuItem2.Name = "addToolStripMenuItem2";
-            this.addToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.addToolStripMenuItem2.Size = new System.Drawing.Size(120, 22);
             this.addToolStripMenuItem2.Text = "Control";
             this.addToolStripMenuItem2.Click += new System.EventHandler(this.addToolStripMenuItem2_Click);
             // 
             // toolStripSeparator4
             // 
             this.toolStripSeparator4.Name = "toolStripSeparator4";
-            this.toolStripSeparator4.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator4.Size = new System.Drawing.Size(117, 6);
             // 
             // showAllToolStripMenuItem2
             // 
             this.showAllToolStripMenuItem2.Name = "showAllToolStripMenuItem2";
-            this.showAllToolStripMenuItem2.Size = new System.Drawing.Size(152, 22);
+            this.showAllToolStripMenuItem2.Size = new System.Drawing.Size(120, 22);
             this.showAllToolStripMenuItem2.Text = "Show All";
             this.showAllToolStripMenuItem2.Click += new System.EventHandler(this.showAllToolStripMenuItem2_Click);
             // 

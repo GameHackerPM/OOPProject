@@ -114,6 +114,12 @@ namespace Gym_Managment
             new EmployeeShowAll().Show();
         }
 
+        private void equipmentsBtn_Click(object sender, EventArgs e)
+        {
+            new Form1().Show();
+
+        }
+
         
     }
 }

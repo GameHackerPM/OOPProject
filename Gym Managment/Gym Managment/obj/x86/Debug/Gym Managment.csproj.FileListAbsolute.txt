@@ -52,3 +52,22 @@ C:\Users\heba gamal\Desktop\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug
 E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.EmployeeForm.resources
 E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.EmployeeShowAll.resources
 E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.InstructorShowAll.resources
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.exe
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.pdb
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.csprojResolveAssemblyReference.cache
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.AboutUs.resources
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.EmployeeForm.resources
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.EmployeeShowAll.resources
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Form1.resources
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.InstructorForm.resources
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.InstructorShowAll.resources
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Login.resources
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Main.resources
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.MembersForm.resources
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.MembersShowAll.resources
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Properties.Resources.resources
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.TransactionsForm.resources
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.TransactionsShowAll.resources
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.csproj.GenerateResource.Cache
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\bin\Debug\Gym Managment.exe
+C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\bin\Debug\Gym Managment.pdb
