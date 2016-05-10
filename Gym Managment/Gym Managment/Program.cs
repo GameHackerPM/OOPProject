@@ -49,11 +49,11 @@ namespace Gym_Managment
             InstructorsList.Add(I3);
             InstructorsList.Add(I4);
 
-            Employee Emp1 = new Employee("Mohamed", "Mostafa", "12street elwafaa", 018865856, 5000, DateTime.Now.AddDays(12));
-            Employee Emp2 = new Employee("Ramy", "Ayman", "13street eldegwy", 018648951, 1100, DateTime.Now);
-            Employee Emp3 = new Employee("Alaa", "Mohamed", "19street elfayz", 018613794, 1200, DateTime.Now.AddMonths(2));
-            Employee Emp4 = new Employee("Ahlam", "Ali", "20street elmo3z", 010579243,2300, DateTime.Now);
-            Employee Emp5 = new Employee("Basant", "taye3", "19street elfayz", 018613794, 1200, DateTime.Now.AddYears(1));
+            Employee Emp1 = new Employee("Mohamed", "Mostafa", "mohamed" , "123" ,"12street elwafaa", 018865856, 5000, DateTime.Now.AddDays(12));
+            Employee Emp2 = new Employee("Ramy", "Ayman", "ramy" ,"123", "13street eldegwy", 018648951, 1100, DateTime.Now);
+            Employee Emp3 = new Employee("Alaa", "Mohamed", "alaa", "alaa", "19street elfayz", 018613794, 1200, DateTime.Now.AddMonths(2));
+            Employee Emp4 = new Employee("Ahlam", "Ali", "ahlam", "ahlam", "20street elmo3z", 010579243, 2300, DateTime.Now);
+            Employee Emp5 = new Employee("Basant", "taye3", "basant", "basent", "19street elfayz", 018613794, 1200, DateTime.Now.AddYears(1));
 
             EmployeesList.Add(Emp1);
             EmployeesList.Add(Emp2);

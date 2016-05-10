@@ -55,37 +55,37 @@
     <Compile Include="AboutUs.Designer.cs">
       <DependentUpon>AboutUs.cs</DependentUpon>
     </Compile>
-    <Compile Include="Employee.cs" />
-    <Compile Include="EmployeeForm.cs">
+    <Compile Include="Employees\Employee.cs" />
+    <Compile Include="Employees\EmployeeForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployeeForm.Designer.cs">
+    <Compile Include="Employees\EmployeeForm.Designer.cs">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="EmployeeShowAll.cs">
+    <Compile Include="Employees\EmployeeShowAll.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="EmployeeShowAll.Designer.cs">
+    <Compile Include="Employees\EmployeeShowAll.Designer.cs">
       <DependentUpon>EmployeeShowAll.cs</DependentUpon>
     </Compile>
-    <Compile Include="Equipment.cs" />
-    <Compile Include="Form1.cs">
+    <Compile Include="Equipments\Equipment.cs" />
+    <Compile Include="Equipments\EquipmentForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Equipments\EquipmentForm.Designer.cs">
+      <DependentUpon>EquipmentForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="Instructor.cs" />
-    <Compile Include="InstructorForm.cs">
+    <Compile Include="Instructors\Instructor.cs" />
+    <Compile Include="Instructors\InstructorForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InstructorForm.Designer.cs">
+    <Compile Include="Instructors\InstructorForm.Designer.cs">
       <DependentUpon>InstructorForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="InstructorShowAll.cs">
+    <Compile Include="Instructors\InstructorShowAll.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="InstructorShowAll.Designer.cs">
+    <Compile Include="Instructors\InstructorShowAll.Designer.cs">
       <DependentUpon>InstructorShowAll.cs</DependentUpon>
     </Compile>
     <Compile Include="Login.cs">
@@ -100,52 +100,52 @@
     <Compile Include="Main.Designer.cs">
       <DependentUpon>Main.cs</DependentUpon>
     </Compile>
-    <Compile Include="Members.cs" />
-    <Compile Include="MembersForm.cs">
+    <Compile Include="Members\Members.cs" />
+    <Compile Include="Members\MembersForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MembersForm.Designer.cs">
+    <Compile Include="Members\MembersForm.Designer.cs">
       <DependentUpon>MembersForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="MembersShowAll.cs">
+    <Compile Include="Members\MembersShowAll.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="MembersShowAll.Designer.cs">
+    <Compile Include="Members\MembersShowAll.Designer.cs">
       <DependentUpon>MembersShowAll.cs</DependentUpon>
     </Compile>
-    <Compile Include="Plan_Courses.cs" />
+    <Compile Include="Plan_Courses\Plan_Courses.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Supplier.cs" />
-    <Compile Include="Transactions.cs" />
-    <Compile Include="TransactionsForm.cs">
+    <Compile Include="Suppliers\Supplier.cs" />
+    <Compile Include="Transactions\Transactions.cs" />
+    <Compile Include="Transactions\TransactionsForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TransactionsForm.Designer.cs">
+    <Compile Include="Transactions\TransactionsForm.Designer.cs">
       <DependentUpon>TransactionsForm.cs</DependentUpon>
     </Compile>
-    <Compile Include="TransactionsShowAll.cs">
+    <Compile Include="Transactions\TransactionsShowAll.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="TransactionsShowAll.Designer.cs">
+    <Compile Include="Transactions\TransactionsShowAll.Designer.cs">
       <DependentUpon>TransactionsShowAll.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="AboutUs.resx">
       <DependentUpon>AboutUs.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeForm.resx">
+    <EmbeddedResource Include="Employees\EmployeeForm.resx">
       <DependentUpon>EmployeeForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="EmployeeShowAll.resx">
+    <EmbeddedResource Include="Employees\EmployeeShowAll.resx">
       <DependentUpon>EmployeeShowAll.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <EmbeddedResource Include="Equipments\EquipmentForm.resx">
+      <DependentUpon>EquipmentForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InstructorForm.resx">
+    <EmbeddedResource Include="Instructors\InstructorForm.resx">
       <DependentUpon>InstructorForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="InstructorShowAll.resx">
+    <EmbeddedResource Include="Instructors\InstructorShowAll.resx">
       <DependentUpon>InstructorShowAll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Login.resx">
@@ -154,10 +154,10 @@
     <EmbeddedResource Include="Main.resx">
       <DependentUpon>Main.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MembersForm.resx">
+    <EmbeddedResource Include="Members\MembersForm.resx">
       <DependentUpon>MembersForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="MembersShowAll.resx">
+    <EmbeddedResource Include="Members\MembersShowAll.resx">
       <DependentUpon>MembersShowAll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -170,10 +170,10 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="TransactionsForm.resx">
+    <EmbeddedResource Include="Transactions\TransactionsForm.resx">
       <DependentUpon>TransactionsForm.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="TransactionsShowAll.resx">
+    <EmbeddedResource Include="Transactions\TransactionsShowAll.resx">
       <DependentUpon>TransactionsShowAll.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">

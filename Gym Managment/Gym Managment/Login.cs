@@ -23,11 +23,14 @@ namespace Gym_Managment
 
         private void LoginBtn_Click(object sender, EventArgs e)
         {
-            if (UNtxt.Text == Program.Username)
+            var validUsername = Program.EmployeesList.FirstOrDefault(emp => emp.Username == UNtxt.Text);
+            var validPassword = Program.EmployeesList.FirstOrDefault(emp => emp.Username == UNtxt.Text && emp.Password == PWtxt.Text);
+            if (validUsername != null)
             {
-                if (PWtxt.Text == Program.Password)
+                if (validPassword != null)
                 {
                     //MessageBox.Show("Logged in successfully!");
+                    Program.Username = UNtxt.Text;
                     new Main().Show();
                     this.Hide();
                 }

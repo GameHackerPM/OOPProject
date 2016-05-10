@@ -116,8 +116,13 @@ namespace Gym_Managment
 
         private void equipmentsBtn_Click(object sender, EventArgs e)
         {
-            new Form1().Show();
+            new EquipmentForm().Show();
 
+        }
+
+        private void Main_Load(object sender, EventArgs e)
+        {
+            usernameLbl.Text = Program.Username;
         }
 
         

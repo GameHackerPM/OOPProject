@@ -34,8 +34,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.LoginBtn = new System.Windows.Forms.Button();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.groupBox1.SuspendLayout();
@@ -46,18 +44,18 @@
             // 
             this.UNtxt.Location = new System.Drawing.Point(122, 67);
             this.UNtxt.Name = "UNtxt";
-            this.UNtxt.Size = new System.Drawing.Size(182, 22);
+            this.UNtxt.Size = new System.Drawing.Size(231, 22);
             this.UNtxt.TabIndex = 0;
-            this.UNtxt.Text = "admin";
+            this.UNtxt.Text = "mohamed";
             this.UNtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // PWtxt
             // 
             this.PWtxt.Location = new System.Drawing.Point(122, 119);
             this.PWtxt.Name = "PWtxt";
-            this.PWtxt.Size = new System.Drawing.Size(182, 22);
+            this.PWtxt.Size = new System.Drawing.Size(231, 22);
             this.PWtxt.TabIndex = 1;
-            this.PWtxt.Text = "admin";
+            this.PWtxt.Text = "123";
             this.PWtxt.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.PWtxt.UseSystemPasswordChar = true;
             // 
@@ -81,7 +79,7 @@
             // 
             // LoginBtn
             // 
-            this.LoginBtn.Location = new System.Drawing.Point(159, 178);
+            this.LoginBtn.Location = new System.Drawing.Point(180, 176);
             this.LoginBtn.Name = "LoginBtn";
             this.LoginBtn.Size = new System.Drawing.Size(119, 41);
             this.LoginBtn.TabIndex = 4;
@@ -89,31 +87,11 @@
             this.LoginBtn.UseVisualStyleBackColor = true;
             this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(310, 70);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(93, 17);
-            this.label3.TabIndex = 5;
-            this.label3.Text = "(Hint : admin)";
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(310, 122);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(93, 17);
-            this.label4.TabIndex = 6;
-            this.label4.Text = "(Hint : admin)";
-            // 
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label1);
-            this.groupBox1.Controls.Add(this.label4);
             this.groupBox1.Controls.Add(this.LoginBtn);
             this.groupBox1.Controls.Add(this.UNtxt);
-            this.groupBox1.Controls.Add(this.label3);
             this.groupBox1.Controls.Add(this.PWtxt);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(230, 62);
@@ -162,8 +140,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button LoginBtn;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.PictureBox pictureBox1;
     }
