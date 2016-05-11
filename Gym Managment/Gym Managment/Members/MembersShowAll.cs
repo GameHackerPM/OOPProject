@@ -97,6 +97,21 @@ namespace Gym_Managment
             }
         }
 
+        private void searchTxt_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void modeCombo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
        
     }
 }

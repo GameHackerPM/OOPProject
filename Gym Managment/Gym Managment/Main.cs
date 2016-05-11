@@ -125,6 +125,11 @@ namespace Gym_Managment
             usernameLbl.Text = Program.Username;
         }
 
+        private void showAllToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            new Gym_Managment.Equipments.EquipmentShowAll().Show();
+        }
+
         
     }
 }
