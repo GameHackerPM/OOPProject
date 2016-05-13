@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -64,7 +65,23 @@ namespace Gym_Managment
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
-            
+            foreach (Members selectedMember in Program.MembersList)
+            {
+                if ((string)membersList.SelectedItem == selectedMember.FirstName + " " + selectedMember.LastName)
+                {
+                    selectedMember.FirstName = firstnameTxt.Text;
+                    selectedMember.LastName = lastnameTxt.Text;
+                    selectedMember.Contact_No = Convert.ToInt32(contactnoTxt.Text);
+                    selectedMember.Address = addressTxt.Text;
+                    selectedMember.DateOfJoining = dateofjoiningDate.Value;
+                    selectedMember.PlanType = plantypeCombo.SelectedIndex + 1;
+                    selectedMember.Amount = double.Parse(amountTxt.Text.Replace("$",""), CultureInfo.InvariantCulture);
+
+                    membersList.Items[membersList.SelectedIndex] = selectedMember.FirstName + " " + selectedMember.LastName;
+                    break;
+
+                }
+            }
         }
 
         private void exitBtn_Click(object sender, EventArgs e)
@@ -93,19 +110,7 @@ namespace Gym_Managment
         
         private void amountTxt_Leave(object sender, EventArgs e)
         {
-            //try
-            //{
-            //    double value = amountTxt.Text == string.Empty ? 0 : Convert.ToInt32(amountTxt.Text.Replace("$", "").Replace(",",""));
-            //    amountTxt.Text = string.Format("{0:C}", value);
-
-            //}
-            //catch
-            //{
-            //    amountTxt.Text = string.Format("{0:C}", 0);
-            //}
-
-            if (!amountTxt.Text.Contains("$"))
-                amountTxt.Text = "$" + amountTxt.Text;
+            amountTxt.Text = string.Format("{0:C}", double.Parse(amountTxt.Text.Replace("$", ""), CultureInfo.InvariantCulture));
         }
 
         private void addBtn_Click(object sender, EventArgs e)

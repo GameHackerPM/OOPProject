@@ -73,3 +73,4 @@ C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\bin\Debu
 E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.EquipmentForm.resources
 C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.EquipmentForm.resources
 C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Equipments.EquipmentShowAll.resources
+E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Equipments.EquipmentShowAll.resources

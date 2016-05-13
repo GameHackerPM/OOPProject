@@ -17,14 +17,14 @@ namespace Gym_Managment.Equipments
         }
 
         private void equipmentShow_Load(object sender, EventArgs e)
-        {modeCombo.SelectedIndex = 0;
-
+        {
+            modeCombo.SelectedIndex = 0;
             DataTable dt = new DataTable();
             dt.Clear();
             dt.Columns.Add("ID");
             dt.Columns.Add("Name");
             dt.Columns.Add("Company");
-            dt.Columns.Add("Quntity");
+            dt.Columns.Add("Quantity");
             dt.Columns.Add("Price per Quntity");
             dt.Columns.Add("Total Price");
             dt.Columns.Add("Date");
@@ -34,9 +34,9 @@ namespace Gym_Managment.Equipments
                 DataRow row = dt.NewRow();
                 row["ID"] = euipment.ID.ToString();
                 row["Name"] = euipment.NameOfInstrument;
-                row["Copmany"] =  euipment.Company;
-                row["Quntity"] = euipment.total_Quantity.ToString();
-                row["Price per Quntity"] =euipment.price_per_Quantity.ToString();
+                row["Company"] = euipment.Company;
+                row["Quantity"] = euipment.total_Quantity.ToString();
+                row["Price per Quntity"] = string.Format("{0:C}", euipment.price_per_Quantity);
                 row["Total Price"] = string.Format("{0:C}", euipment.total_price);
                 row["Date"] = euipment.Date.ToString("dd/MM/yyy");
                 dt.Rows.Add(row);

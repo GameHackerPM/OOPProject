@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EquipmentShowAll));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.searchTxt = new System.Windows.Forms.TextBox();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -45,21 +46,21 @@
             this.groupBox1.Controls.Add(this.modeCombo);
             this.groupBox1.Controls.Add(this.clearBtn);
             this.groupBox1.Controls.Add(this.searchBtn);
-            this.groupBox1.Location = new System.Drawing.Point(5, 16);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(2);
+            this.groupBox1.Location = new System.Drawing.Point(7, 20);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(2);
-            this.groupBox1.Size = new System.Drawing.Size(738, 366);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox1.Size = new System.Drawing.Size(787, 450);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "All Equipment Data Information";
             // 
             // searchTxt
             // 
-            this.searchTxt.Location = new System.Drawing.Point(260, 20);
-            this.searchTxt.Margin = new System.Windows.Forms.Padding(2);
+            this.searchTxt.Location = new System.Drawing.Point(239, 25);
+            this.searchTxt.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchTxt.Name = "searchTxt";
-            this.searchTxt.Size = new System.Drawing.Size(139, 20);
+            this.searchTxt.Size = new System.Drawing.Size(184, 22);
             this.searchTxt.TabIndex = 0;
             this.searchTxt.TextChanged += new System.EventHandler(this.searchTxt_TextChanged);
             // 
@@ -68,13 +69,13 @@
             this.dataGridView1.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.AllCells;
             this.dataGridView1.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(4, 44);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
+            this.dataGridView1.Location = new System.Drawing.Point(5, 54);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.ReadOnly = true;
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
-            this.dataGridView1.Size = new System.Drawing.Size(729, 318);
+            this.dataGridView1.Size = new System.Drawing.Size(776, 391);
             this.dataGridView1.TabIndex = 4;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -86,19 +87,19 @@
             "ID",
             "Name",
             "Date"});
-            this.modeCombo.Location = new System.Drawing.Point(208, 19);
-            this.modeCombo.Margin = new System.Windows.Forms.Padding(2);
+            this.modeCombo.Location = new System.Drawing.Point(169, 23);
+            this.modeCombo.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.modeCombo.Name = "modeCombo";
-            this.modeCombo.Size = new System.Drawing.Size(48, 21);
+            this.modeCombo.Size = new System.Drawing.Size(63, 24);
             this.modeCombo.TabIndex = 1;
             this.modeCombo.SelectedIndexChanged += new System.EventHandler(this.modeCombo_SelectedIndexChanged);
             // 
             // clearBtn
             // 
-            this.clearBtn.Location = new System.Drawing.Point(494, 19);
-            this.clearBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.clearBtn.Location = new System.Drawing.Point(551, 23);
+            this.clearBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.clearBtn.Name = "clearBtn";
-            this.clearBtn.Size = new System.Drawing.Size(87, 20);
+            this.clearBtn.Size = new System.Drawing.Size(116, 25);
             this.clearBtn.TabIndex = 3;
             this.clearBtn.Text = "Clear Filter";
             this.clearBtn.UseVisualStyleBackColor = true;
@@ -106,10 +107,10 @@
             // 
             // searchBtn
             // 
-            this.searchBtn.Location = new System.Drawing.Point(402, 19);
-            this.searchBtn.Margin = new System.Windows.Forms.Padding(2);
+            this.searchBtn.Location = new System.Drawing.Point(428, 23);
+            this.searchBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.searchBtn.Name = "searchBtn";
-            this.searchBtn.Size = new System.Drawing.Size(56, 20);
+            this.searchBtn.Size = new System.Drawing.Size(75, 25);
             this.searchBtn.TabIndex = 2;
             this.searchBtn.Text = "Search";
             this.searchBtn.UseVisualStyleBackColor = true;
@@ -117,11 +118,16 @@
             // 
             // EquipmentShowAll
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(748, 399);
+            this.ClientSize = new System.Drawing.Size(799, 475);
             this.Controls.Add(this.groupBox1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "EquipmentShowAll";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EquipmentShowAll";
             this.Load += new System.EventHandler(this.equipmentShow_Load);
             this.groupBox1.ResumeLayout(false);

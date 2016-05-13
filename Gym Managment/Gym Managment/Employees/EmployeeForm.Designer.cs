@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(EmployeeForm));
             this.Reset_Btn = new System.Windows.Forms.Button();
             this.Exit_Btn = new System.Windows.Forms.Button();
             this.Edit_Btn = new System.Windows.Forms.Button();
@@ -375,8 +376,11 @@
             this.Controls.Add(this.IdTxt);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.groupBox1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "EmployeeForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "EmployeeForm";
             this.Load += new System.EventHandler(this.EmployeeForm_Load);
             this.groupBox1.ResumeLayout(false);

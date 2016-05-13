@@ -130,6 +130,11 @@ namespace Gym_Managment
             new Gym_Managment.Equipments.EquipmentShowAll().Show();
         }
 
+        private void addToolStripMenuItem3_Click(object sender, EventArgs e)
+        {
+            new EquipmentForm().Show();
+        }
+
         
     }
 }
