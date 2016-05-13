@@ -64,8 +64,24 @@ namespace Gym_Managment
 
         private void Edit_btu_Click(object sender, EventArgs e)
         {
-            //if
-        }
+            foreach (Equipment equipment in Program.EquipmentsList)
+            {
+                if ((string)EquipmentList.SelectedItem == equipment.NameOfInstrument)
+                {
+                    equipment.NameOfInstrument = textName.Text;
+                    equipment.Company = textcompany.Text;
+                    equipment.total_Quantity = Convert.ToInt32(txt_price_Qunt.Text);
+                    equipment.price_per_Quantity = Convert.ToInt32(text_Total_Price.Text);
+                    equipment.Date = dateTimePicker1.Value;
+
+
+                    equipment.total_price = Convert.ToInt32(text_Total_Price.Text);
+
+                    EquipmentList.Items[EquipmentList.SelectedIndex] = equipment.NameOfInstrument;
+                    break;
+                }
+            }
+        }  
 
         private void exit_but_Click(object sender, EventArgs e)
         {
