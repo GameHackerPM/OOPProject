@@ -74,3 +74,24 @@ E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_M
 C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.EquipmentForm.resources
 C:\Users\Galaxy\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Equipments.EquipmentShowAll.resources
 E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Equipments.EquipmentShowAll.resources
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.exe
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.pdb
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\bin\Debug\Gym Managment.exe
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\bin\Debug\Gym Managment.pdb
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.csprojResolveAssemblyReference.cache
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.AboutUs.resources
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.EmployeeForm.resources
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.EmployeeShowAll.resources
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.EquipmentForm.resources
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Equipments.EquipmentShowAll.resources
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Form1.resources
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.InstructorForm.resources
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.InstructorShowAll.resources
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Login.resources
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Main.resources
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.MembersForm.resources
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.MembersShowAll.resources
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Properties.Resources.resources
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.TransactionsForm.resources
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.TransactionsShowAll.resources
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.csproj.GenerateResource.Cache

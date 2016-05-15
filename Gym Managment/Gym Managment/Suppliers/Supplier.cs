@@ -27,5 +27,9 @@ namespace Gym_Managment
            return lastlD++;
 
        }
+       public static int GetCount()
+       {
+           return Program.SupplierList.Count;
+       }
     }
 }

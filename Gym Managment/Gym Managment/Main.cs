@@ -135,6 +135,11 @@ namespace Gym_Managment
             new EquipmentForm().Show();
         }
 
+        private void supplierBtn_Click(object sender, EventArgs e)
+        {
+            new Form1().Show();
+        }
+
         
     }
 }
