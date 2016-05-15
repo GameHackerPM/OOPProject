@@ -112,6 +112,11 @@ namespace Gym_Managment
 
         }
 
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
+        }
+
        
     }
 }

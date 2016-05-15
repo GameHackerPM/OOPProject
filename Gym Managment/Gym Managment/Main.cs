@@ -140,6 +140,11 @@ namespace Gym_Managment
             new Form1().Show();
         }
 
+        private void showAllToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            new Form2().Show();
+        }
+
         
     }
 }

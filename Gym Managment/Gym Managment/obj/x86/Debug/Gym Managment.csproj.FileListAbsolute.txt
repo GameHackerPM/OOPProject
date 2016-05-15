@@ -95,3 +95,4 @@ C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\D
 C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.TransactionsForm.resources
 C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.TransactionsShowAll.resources
 C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.csproj.GenerateResource.Cache
+C:\Users\nahla\Documents\GitHub\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Form2.resources

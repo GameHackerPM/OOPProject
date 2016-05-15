@@ -86,7 +86,7 @@
             // 
             this.memberBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.memberBtn.Location = new System.Drawing.Point(9, 90);
-            this.memberBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.memberBtn.Margin = new System.Windows.Forms.Padding(2);
             this.memberBtn.Name = "memberBtn";
             this.memberBtn.Size = new System.Drawing.Size(142, 42);
             this.memberBtn.TabIndex = 0;
@@ -98,7 +98,7 @@
             // 
             this.planBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.planBtn.Location = new System.Drawing.Point(9, 137);
-            this.planBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.planBtn.Margin = new System.Windows.Forms.Padding(2);
             this.planBtn.Name = "planBtn";
             this.planBtn.Size = new System.Drawing.Size(142, 42);
             this.planBtn.TabIndex = 1;
@@ -109,7 +109,7 @@
             // 
             this.instructorBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.instructorBtn.Location = new System.Drawing.Point(9, 184);
-            this.instructorBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.instructorBtn.Margin = new System.Windows.Forms.Padding(2);
             this.instructorBtn.Name = "instructorBtn";
             this.instructorBtn.Size = new System.Drawing.Size(142, 42);
             this.instructorBtn.TabIndex = 2;
@@ -121,7 +121,7 @@
             // 
             this.equipmentsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.equipmentsBtn.Location = new System.Drawing.Point(9, 231);
-            this.equipmentsBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.equipmentsBtn.Margin = new System.Windows.Forms.Padding(2);
             this.equipmentsBtn.Name = "equipmentsBtn";
             this.equipmentsBtn.Size = new System.Drawing.Size(142, 42);
             this.equipmentsBtn.TabIndex = 3;
@@ -133,7 +133,7 @@
             // 
             this.supplierBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.supplierBtn.Location = new System.Drawing.Point(9, 279);
-            this.supplierBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.supplierBtn.Margin = new System.Windows.Forms.Padding(2);
             this.supplierBtn.Name = "supplierBtn";
             this.supplierBtn.Size = new System.Drawing.Size(142, 42);
             this.supplierBtn.TabIndex = 4;
@@ -145,7 +145,7 @@
             // 
             this.transactionBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.transactionBtn.Location = new System.Drawing.Point(9, 326);
-            this.transactionBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.transactionBtn.Margin = new System.Windows.Forms.Padding(2);
             this.transactionBtn.Name = "transactionBtn";
             this.transactionBtn.Size = new System.Drawing.Size(142, 42);
             this.transactionBtn.TabIndex = 5;
@@ -360,19 +360,20 @@
             // addToolStripMenuItem4
             // 
             this.addToolStripMenuItem4.Name = "addToolStripMenuItem4";
-            this.addToolStripMenuItem4.Size = new System.Drawing.Size(120, 22);
+            this.addToolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
             this.addToolStripMenuItem4.Text = "Control";
             // 
             // toolStripSeparator6
             // 
             this.toolStripSeparator6.Name = "toolStripSeparator6";
-            this.toolStripSeparator6.Size = new System.Drawing.Size(117, 6);
+            this.toolStripSeparator6.Size = new System.Drawing.Size(149, 6);
             // 
             // showAllToolStripMenuItem4
             // 
             this.showAllToolStripMenuItem4.Name = "showAllToolStripMenuItem4";
-            this.showAllToolStripMenuItem4.Size = new System.Drawing.Size(120, 22);
+            this.showAllToolStripMenuItem4.Size = new System.Drawing.Size(152, 22);
             this.showAllToolStripMenuItem4.Text = "Show All";
+            this.showAllToolStripMenuItem4.Click += new System.EventHandler(this.showAllToolStripMenuItem4_Click);
             // 
             // transactionsToolStripMenuItem
             // 
@@ -422,7 +423,7 @@
             // 
             this.settingsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.settingsBtn.Location = new System.Drawing.Point(9, 373);
-            this.settingsBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.settingsBtn.Margin = new System.Windows.Forms.Padding(2);
             this.settingsBtn.Name = "settingsBtn";
             this.settingsBtn.Size = new System.Drawing.Size(142, 42);
             this.settingsBtn.TabIndex = 7;
@@ -433,7 +434,7 @@
             // 
             this.exitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.exitBtn.Location = new System.Drawing.Point(9, 420);
-            this.exitBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.exitBtn.Margin = new System.Windows.Forms.Padding(2);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(142, 42);
             this.exitBtn.TabIndex = 8;
@@ -454,7 +455,7 @@
             // 
             this.pictureBox1.Image = global::Gym_Managment.Properties.Resources.Logo;
             this.pictureBox1.Location = new System.Drawing.Point(156, 49);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(2);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(663, 414);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -465,7 +466,7 @@
             // 
             this.EmployeeBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmployeeBtn.Location = new System.Drawing.Point(9, 44);
-            this.EmployeeBtn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.EmployeeBtn.Margin = new System.Windows.Forms.Padding(2);
             this.EmployeeBtn.Name = "EmployeeBtn";
             this.EmployeeBtn.Size = new System.Drawing.Size(142, 42);
             this.EmployeeBtn.TabIndex = 10;
@@ -515,7 +516,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.MaximizeBox = false;
             this.Name = "Main";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
