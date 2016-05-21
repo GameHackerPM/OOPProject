@@ -118,3 +118,6 @@ C:\Users\elnil\Downloads\Music\OOPProject\Gym Managment\Gym Managment\obj\x86\De
 C:\Users\elnil\Downloads\Music\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.TransactionsForm.resources
 C:\Users\elnil\Downloads\Music\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.TransactionsShowAll.resources
 C:\Users\elnil\Downloads\Music\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.csproj.GenerateResource.Cache
+E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.SuppliersForm.resources
+E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.SuppliersShowAll.resources
+E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Plan_CoursesForm.resources

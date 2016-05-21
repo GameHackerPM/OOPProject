@@ -1,4 +1,4 @@
-﻿namespace Gym_Managment.Plan_Courses
+﻿namespace Gym_Managment
 {
     partial class Plan_CoursesForm
     {
@@ -28,7 +28,9 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Plan_CoursesForm));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.plan_coursesList = new System.Windows.Forms.ListBox();
             this.DeleteButton = new System.Windows.Forms.Button();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -45,7 +47,6 @@
             this.idTxt = new System.Windows.Forms.TextBox();
             this.plannameTxt = new System.Windows.Forms.TextBox();
             this.amountTxt = new System.Windows.Forms.TextBox();
-            this.plan_coursesList = new System.Windows.Forms.ListBox();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -59,18 +60,33 @@
             this.groupBox1.Controls.Add(this.label6);
             this.groupBox1.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.SystemColors.WindowText;
-            this.groupBox1.Location = new System.Drawing.Point(26, 12);
+            this.groupBox1.Location = new System.Drawing.Point(35, 15);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(198, 440);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(264, 542);
             this.groupBox1.TabIndex = 44;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Plan_Courses Informtion";
             // 
+            // plan_coursesList
+            // 
+            this.plan_coursesList.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.plan_coursesList.FormattingEnabled = true;
+            this.plan_coursesList.ItemHeight = 17;
+            this.plan_coursesList.Location = new System.Drawing.Point(8, 87);
+            this.plan_coursesList.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.plan_coursesList.Name = "plan_coursesList";
+            this.plan_coursesList.Size = new System.Drawing.Size(247, 378);
+            this.plan_coursesList.TabIndex = 6;
+            this.plan_coursesList.SelectedIndexChanged += new System.EventHandler(this.plan_coursesList_SelectedIndexChanged);
+            // 
             // DeleteButton
             // 
-            this.DeleteButton.Location = new System.Drawing.Point(51, 398);
+            this.DeleteButton.Location = new System.Drawing.Point(68, 490);
+            this.DeleteButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.DeleteButton.Name = "DeleteButton";
-            this.DeleteButton.Size = new System.Drawing.Size(103, 29);
+            this.DeleteButton.Size = new System.Drawing.Size(137, 36);
             this.DeleteButton.TabIndex = 5;
             this.DeleteButton.Text = "Delete ";
             this.DeleteButton.UseVisualStyleBackColor = true;
@@ -79,35 +95,39 @@
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(38, 30);
+            this.label8.Location = new System.Drawing.Point(51, 37);
+            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(129, 13);
+            this.label8.Size = new System.Drawing.Size(165, 17);
             this.label8.TabIndex = 4;
             this.label8.Text = "Plan_Courses Count  :   0";
             // 
             // label7
             // 
             this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(69, 17);
+            this.label7.Location = new System.Drawing.Point(92, 21);
+            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(0, 13);
+            this.label7.Size = new System.Drawing.Size(0, 17);
             this.label7.TabIndex = 3;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(48, 55);
+            this.label6.Location = new System.Drawing.Point(64, 68);
+            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(106, 13);
+            this.label6.Size = new System.Drawing.Size(130, 17);
             this.label6.TabIndex = 2;
             this.label6.Text = "Plan_Courses List";
             // 
             // exitbutton
             // 
-            this.exitbutton.Location = new System.Drawing.Point(559, 277);
+            this.exitbutton.Location = new System.Drawing.Point(745, 341);
+            this.exitbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.exitbutton.Name = "exitbutton";
-            this.exitbutton.Size = new System.Drawing.Size(72, 32);
+            this.exitbutton.Size = new System.Drawing.Size(96, 39);
             this.exitbutton.TabIndex = 43;
             this.exitbutton.Text = "Exit";
             this.exitbutton.UseVisualStyleBackColor = true;
@@ -115,9 +135,10 @@
             // 
             // editbutton
             // 
-            this.editbutton.Location = new System.Drawing.Point(481, 277);
+            this.editbutton.Location = new System.Drawing.Point(641, 341);
+            this.editbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.editbutton.Name = "editbutton";
-            this.editbutton.Size = new System.Drawing.Size(72, 32);
+            this.editbutton.Size = new System.Drawing.Size(96, 39);
             this.editbutton.TabIndex = 42;
             this.editbutton.Text = "Edit";
             this.editbutton.UseVisualStyleBackColor = true;
@@ -125,9 +146,10 @@
             // 
             // addbutton
             // 
-            this.addbutton.Location = new System.Drawing.Point(403, 277);
+            this.addbutton.Location = new System.Drawing.Point(537, 341);
+            this.addbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.addbutton.Name = "addbutton";
-            this.addbutton.Size = new System.Drawing.Size(72, 32);
+            this.addbutton.Size = new System.Drawing.Size(96, 39);
             this.addbutton.TabIndex = 41;
             this.addbutton.Text = "Add";
             this.addbutton.UseVisualStyleBackColor = true;
@@ -135,9 +157,10 @@
             // 
             // resetbutton
             // 
-            this.resetbutton.Location = new System.Drawing.Point(325, 277);
+            this.resetbutton.Location = new System.Drawing.Point(433, 341);
+            this.resetbutton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.resetbutton.Name = "resetbutton";
-            this.resetbutton.Size = new System.Drawing.Size(72, 32);
+            this.resetbutton.Size = new System.Drawing.Size(96, 39);
             this.resetbutton.TabIndex = 40;
             this.resetbutton.Text = "Reset";
             this.resetbutton.UseVisualStyleBackColor = true;
@@ -146,35 +169,39 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(351, 144);
+            this.label5.Location = new System.Drawing.Point(468, 177);
+            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(46, 13);
+            this.label5.Size = new System.Drawing.Size(59, 17);
             this.label5.TabIndex = 39;
             this.label5.Text = "Details :";
             // 
             // detailsTxt
             // 
-            this.detailsTxt.Location = new System.Drawing.Point(408, 141);
+            this.detailsTxt.Location = new System.Drawing.Point(544, 174);
+            this.detailsTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.detailsTxt.Multiline = true;
             this.detailsTxt.Name = "detailsTxt";
-            this.detailsTxt.Size = new System.Drawing.Size(260, 71);
+            this.detailsTxt.Size = new System.Drawing.Size(345, 86);
             this.detailsTxt.TabIndex = 38;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(346, 100);
+            this.label4.Location = new System.Drawing.Point(461, 123);
+            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(51, 13);
+            this.label4.Size = new System.Drawing.Size(64, 17);
             this.label4.TabIndex = 37;
             this.label4.Text = "Amount :";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(338, 53);
+            this.label2.Location = new System.Drawing.Point(451, 65);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(64, 13);
+            this.label2.Size = new System.Drawing.Size(85, 17);
             this.label2.TabIndex = 34;
             this.label2.Text = "Plan Name :";
             this.label2.Click += new System.EventHandler(this.label2_Click);
@@ -182,48 +209,42 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(372, 15);
+            this.label1.Location = new System.Drawing.Point(496, 18);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(25, 13);
+            this.label1.Size = new System.Drawing.Size(29, 17);
             this.label1.TabIndex = 33;
             this.label1.Text = "ID :";
             // 
             // idTxt
             // 
-            this.idTxt.Location = new System.Drawing.Point(408, 12);
+            this.idTxt.Location = new System.Drawing.Point(544, 15);
+            this.idTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.idTxt.Name = "idTxt";
-            this.idTxt.Size = new System.Drawing.Size(100, 20);
+            this.idTxt.Size = new System.Drawing.Size(132, 22);
             this.idTxt.TabIndex = 32;
             // 
             // plannameTxt
             // 
-            this.plannameTxt.Location = new System.Drawing.Point(408, 53);
+            this.plannameTxt.Location = new System.Drawing.Point(544, 65);
+            this.plannameTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.plannameTxt.Name = "plannameTxt";
-            this.plannameTxt.Size = new System.Drawing.Size(151, 20);
+            this.plannameTxt.Size = new System.Drawing.Size(200, 22);
             this.plannameTxt.TabIndex = 31;
             // 
             // amountTxt
             // 
-            this.amountTxt.Location = new System.Drawing.Point(408, 97);
+            this.amountTxt.Location = new System.Drawing.Point(544, 119);
+            this.amountTxt.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.amountTxt.Name = "amountTxt";
-            this.amountTxt.Size = new System.Drawing.Size(121, 20);
+            this.amountTxt.Size = new System.Drawing.Size(160, 22);
             this.amountTxt.TabIndex = 30;
-            // 
-            // plan_coursesList
-            // 
-            this.plan_coursesList.Font = new System.Drawing.Font("Tahoma", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.plan_coursesList.FormattingEnabled = true;
-            this.plan_coursesList.Location = new System.Drawing.Point(6, 71);
-            this.plan_coursesList.Name = "plan_coursesList";
-            this.plan_coursesList.Size = new System.Drawing.Size(186, 316);
-            this.plan_coursesList.TabIndex = 6;
-            this.plan_coursesList.SelectedIndexChanged += new System.EventHandler(this.plan_coursesList_SelectedIndexChanged);
             // 
             // Plan_CoursesForm
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(694, 464);
+            this.ClientSize = new System.Drawing.Size(925, 571);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.exitbutton);
             this.Controls.Add(this.editbutton);
@@ -237,7 +258,12 @@
             this.Controls.Add(this.idTxt);
             this.Controls.Add(this.plannameTxt);
             this.Controls.Add(this.amountTxt);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.MaximizeBox = false;
             this.Name = "Plan_CoursesForm";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Plan_CoursesForm";
             this.Load += new System.EventHandler(this.Plan_CoursesForm_Load);
             this.groupBox1.ResumeLayout(false);

@@ -137,12 +137,32 @@ namespace Gym_Managment
 
         private void supplierBtn_Click(object sender, EventArgs e)
         {
-            new Form1().Show();
+            new SuppliersForm().Show();
         }
 
         private void showAllToolStripMenuItem4_Click(object sender, EventArgs e)
         {
-            new Form2().Show();
+            new SuppliersShowAll().Show();
+        }
+
+        private void planBtn_Click(object sender, EventArgs e)
+        {
+            new Plan_CoursesForm().Show();   
+        }
+
+        private void addToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            new Plan_CoursesForm().Show();
+        }
+
+        private void showAllToolStripMenuItem1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void addToolStripMenuItem4_Click(object sender, EventArgs e)
+        {
+            new SuppliersForm().Show();
         }
 
         
