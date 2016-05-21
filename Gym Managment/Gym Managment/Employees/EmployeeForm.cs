@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -100,16 +101,28 @@ namespace Gym_Managment
                 MessageBox.Show("please Enter The Address ", "Error!", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                 return;
             }
+            Program.AllEmployees.Add(fNameTxt.Text + "~" + LNameTxt.Text + "~" + usernameTxt.Text + "~" + passwordTxt.Text + "~" + AddressTxt.Text + "~" + contact_NoTxt.Text + "~" + SalaryTxt.Text + "~" + Program.ToDateTimeInt(DateOfJoiningDT.Value).ToString());
             Employee NewMember = new Employee(fNameTxt.Text, LNameTxt.Text, usernameTxt.Text, passwordTxt.Text, AddressTxt.Text, Convert.ToInt32(contact_NoTxt.Text), Convert.ToDouble(SalaryTxt.Text), DateOfJoiningDT.Value);
             Program.EmployeesList.Add(NewMember);
             EmpCountLb.Text = Program.EmployeesList.Count.ToString();
             EmployeesListBox.Items.Add(NewMember.FirstName + " " + NewMember.LastName);
-
+            File.WriteAllLines("Database//Employees.txt", Program.AllEmployees.ToArray());
 
         }
 
         private void Edit_Btn_Click(object sender, EventArgs e)
         {
+            for (int i = 0; i < Program.AllEmployees.Count; i++)
+            {
+                string emp = Program.AllEmployees[i].Trim();
+                string[] data = emp.Split(new string[] { "~", /*" "*/ }, StringSplitOptions.RemoveEmptyEntries);
+                if ((string)EmployeesListBox.SelectedItem == data[0] + " " + data[1])
+                {
+                    Program.AllEmployees[i] = fNameTxt.Text + "~" + LNameTxt.Text + "~" + usernameTxt.Text + "~" + passwordTxt.Text + "~" + AddressTxt.Text + "~" + contact_NoTxt.Text + "~" + SalaryTxt.Text + "~" + Program.ToDateTimeInt(DateOfJoiningDT.Value).ToString();
+                    File.WriteAllLines("Database//Employees.txt", Program.AllEmployees.ToArray());
+                }
+            }
+            
             foreach (Employee SelectedEmployee in Program.EmployeesList)
             {
                 if ((string)EmployeesListBox.SelectedItem == SelectedEmployee.FirstName + " " + SelectedEmployee.LastName)
@@ -123,14 +136,9 @@ namespace Gym_Managment
                     SelectedEmployee.DateOfJoining = DateOfJoiningDT.Value;
                     SelectedEmployee.Salary = Convert.ToDouble(SalaryTxt.Text);
 
-
-
                     EmployeesListBox.Items[EmployeesListBox.SelectedIndex] = SelectedEmployee.FirstName + " " + SelectedEmployee.LastName;
                     break;
                 }
-
-
-
             }
         }
 
@@ -155,8 +163,6 @@ namespace Gym_Managment
                     DateOfJoiningDT.Value = SelectedEmployee.DateOfJoining;
                     SalaryTxt.Text = SelectedEmployee.Salary.ToString();
                     break;
-
-
                 }
             }
         }

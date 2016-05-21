@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -58,10 +59,11 @@ namespace Gym_Managment
             }
 
             Plan_Courses NewPlan = new Plan_Courses(plannameTxt.Text, Convert.ToInt32(idTxt.Text), Convert.ToDouble(amountTxt.Text), detailsTxt.Text);
-
+            Program.AllPlan_Courses.Add(plannameTxt.Text + "~" + idTxt.Text + "~" + amountTxt.Text + "~" + detailsTxt.Text);
             Program.Plan_CoursesList.Add(NewPlan);
 
             plan_coursesList.Items.Add(NewPlan.planname);
+            File.WriteAllLines("Database//Plan_Courses.txt", Program.AllPlan_Courses.ToArray());
         }
 
         private void Plan_CoursesForm_Load(object sender, EventArgs e)
@@ -99,6 +101,16 @@ namespace Gym_Managment
 
         private void editbutton_Click(object sender, EventArgs e)
         {
+            for (int i = 0; i < Program.AllPlan_Courses.Count; i++)
+            {
+                string plan_courses = Program.AllPlan_Courses[i].Trim();
+                string[] data = plan_courses.Split(new string[] { "~", /*" "*/ }, StringSplitOptions.RemoveEmptyEntries);
+                if ((string)plan_coursesList.SelectedItem == data[0])
+                {
+                    Program.AllPlan_Courses[i] = plannameTxt.Text + "~" + idTxt.Text + "~" + amountTxt.Text + "~" + detailsTxt.Text;
+                    File.WriteAllLines("Database//Plan_Courses.txt", Program.AllPlan_Courses.ToArray());
+                }
+            }
 
             foreach (Plan_Courses selectedPlan in Program.Plan_CoursesList)
             {

@@ -42,7 +42,7 @@
             // 
             // UNtxt
             // 
-            this.UNtxt.Location = new System.Drawing.Point(122, 67);
+            this.UNtxt.Location = new System.Drawing.Point(140, 67);
             this.UNtxt.Name = "UNtxt";
             this.UNtxt.Size = new System.Drawing.Size(231, 22);
             this.UNtxt.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             // PWtxt
             // 
-            this.PWtxt.Location = new System.Drawing.Point(122, 119);
+            this.PWtxt.Location = new System.Drawing.Point(140, 119);
             this.PWtxt.Name = "PWtxt";
             this.PWtxt.Size = new System.Drawing.Size(231, 22);
             this.PWtxt.TabIndex = 1;
@@ -62,7 +62,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(35, 67);
+            this.label1.Location = new System.Drawing.Point(53, 67);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(81, 17);
             this.label1.TabIndex = 2;
@@ -71,7 +71,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(35, 122);
+            this.label2.Location = new System.Drawing.Point(53, 122);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(77, 17);
             this.label2.TabIndex = 3;
@@ -79,9 +79,9 @@
             // 
             // LoginBtn
             // 
-            this.LoginBtn.Location = new System.Drawing.Point(180, 176);
+            this.LoginBtn.Location = new System.Drawing.Point(159, 177);
             this.LoginBtn.Name = "LoginBtn";
-            this.LoginBtn.Size = new System.Drawing.Size(119, 41);
+            this.LoginBtn.Size = new System.Drawing.Size(159, 41);
             this.LoginBtn.TabIndex = 4;
             this.LoginBtn.Text = "Login";
             this.LoginBtn.UseVisualStyleBackColor = true;
@@ -125,7 +125,6 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
-            this.Load += new System.EventHandler(this.Login_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

@@ -7,7 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace Gym_Managment.Plan_Courses
+namespace Gym_Managment
 {
     public partial class Plan_CoursesShowAll : Form
     {

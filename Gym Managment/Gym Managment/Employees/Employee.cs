@@ -5,9 +5,9 @@ using System.Text;
 
 namespace Gym_Managment
 {
-    class Employee
+    public class Employee
     {
-        private static int LastID = 1; //edit
+        private static int LastID = Properties.Settings.Default.LastEmployee; //edit
         public int ID {get; private set; }
         public string FirstName, LastName, Address;
         public string Username, Password; //ADD this !
@@ -26,7 +26,8 @@ namespace Gym_Managment
             this.DateOfJoining = DateOfJoining;
             Username = username;
             Password = password;
-
+            Properties.Settings.Default.LastEmployee = LastID;
+            Properties.Settings.Default.Save();
         }
         public static int Getcount()
         {

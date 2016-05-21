@@ -157,7 +157,7 @@ namespace Gym_Managment
 
         private void showAllToolStripMenuItem1_Click(object sender, EventArgs e)
         {
-            
+            new Plan_CoursesShowAll().Show();
         }
 
         private void addToolStripMenuItem4_Click(object sender, EventArgs e)

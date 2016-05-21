@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -112,10 +113,11 @@ namespace Gym_Managment
 
 
             Supplier Newsupplier = new Supplier(textBox2.Text, Convert.ToInt32(textBox6.Text), textBox4.Text, textbox3.Text, Convert.ToInt32(textBox5));
-
+            Program.AllSuppliers.Add(textBox2.Text + "~" + textBox6.Text + "~" + textBox4.Text + "~" + textbox3.Text + "~" + textBox5.Text); 
             Program.SupplierList.Add(Newsupplier);
             supplierCountLbl.Text = Supplier.GetCount().ToString();
             SuppliersList.Items.Add(Newsupplier.Name);
+            File.WriteAllLines("Database//Suppliers.txt", Program.AllSuppliers.ToArray());
         }
 
         private void exitBtn_Click(object sender, EventArgs e)
@@ -144,6 +146,16 @@ namespace Gym_Managment
 
         private void editBtn_Click(object sender, EventArgs e)
         {
+            for (int i = 0; i < Program.AllSuppliers.Count; i++)
+            {
+                string supplier = Program.AllSuppliers[i].Trim();
+                string[] data = supplier.Split(new string[] { "~", /*" "*/ }, StringSplitOptions.RemoveEmptyEntries);
+                if ((string)SuppliersList.SelectedItem == data[0])
+                {
+                    Program.AllSuppliers[i] = textBox2.Text + "~" + textBox6.Text + "~" + textBox4.Text + "~" + textbox3.Text + "~" + textBox5.Text;
+                    File.WriteAllLines("Database//Suppliers.txt", Program.AllSuppliers.ToArray());
+                }
+            }
             foreach (Supplier selectedsupplier in Program.SupplierList)
             {
                 if ((string)SuppliersList.SelectedItem == selectedsupplier.Name)

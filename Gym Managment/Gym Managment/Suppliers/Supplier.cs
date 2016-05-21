@@ -7,7 +7,7 @@ namespace Gym_Managment
 {
     public class Supplier
     {
-         private static int lastlD = 1;
+        private static int lastlD = Properties.Settings.Default.LastSupplier;
        public int ID { get; private set; }
        public string Name, Company, Address;
        public int Contact_No, Equipment;
@@ -20,6 +20,8 @@ namespace Gym_Managment
            this.Address = Address;
            this.Company = Company;
            this.Equipment = Equipment;
+           Properties.Settings.Default.LastSupplier = lastlD;
+           Properties.Settings.Default.Save();
        }
 
        private int GetNextID()

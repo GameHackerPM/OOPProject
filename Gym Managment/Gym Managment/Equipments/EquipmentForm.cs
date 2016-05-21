@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -64,6 +65,16 @@ namespace Gym_Managment
 
         private void Edit_btu_Click(object sender, EventArgs e)
         {
+            for (int i = 0; i < Program.AllEquipments.Count; i++)
+            {
+                string equipment = Program.AllEquipments[i].Trim();
+                string[] data = equipment.Split(new string[] { "~", /*" "*/ }, StringSplitOptions.RemoveEmptyEntries);
+                if ((string)EquipmentList.SelectedItem == data[0])
+                {
+                    Program.AllEquipments[i] = textName.Text + "~" + text_To_Quntity.Text + "~" + txt_price_Qunt.Text + "~" + Program.ToDateTimeInt(dateTimePicker1.Value) + "~" + textcompany.Text;
+                    File.WriteAllLines("Database//Equipments.txt", Program.AllEquipments.ToArray());
+                }
+            }
             foreach (Equipment equipment in Program.EquipmentsList)
             {
                 if ((string)EquipmentList.SelectedItem == equipment.NameOfInstrument)
@@ -141,12 +152,13 @@ namespace Gym_Managment
 
 
             Equipment equipment = new Equipment(textName.Text, Convert.ToInt32(text_To_Quntity.Text), Convert.ToInt32(txt_price_Qunt.Text), dateTimePicker1.Value, textcompany.Text);
-
+            Program.AllEquipments.Add(textName.Text + "~" + text_To_Quntity.Text + "~" + txt_price_Qunt.Text + "~" + Program.ToDateTimeInt(dateTimePicker1.Value) + "~" + textcompany.Text);
             Program.EquipmentsList.Add(equipment);
             equipmentCountLbl.Text = Equipment.GetCount().ToString();
             // text_Total_Price.Text = Equipment.Get_Total_price(values, quntity).ToString();
 
             EquipmentList.Items.Add(equipment.NameOfInstrument);
+            File.WriteAllLines("Database//Equipments.txt", Program.AllEmployees.ToArray());
         }
 
         private void EquipmentList_SelectedIndexChanged(object sender, EventArgs e)

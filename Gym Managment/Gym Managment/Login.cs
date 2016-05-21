@@ -15,12 +15,6 @@ namespace Gym_Managment
         {
             InitializeComponent();
         }
-
-        private void Login_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void LoginBtn_Click(object sender, EventArgs e)
         {
             var validUsername = Program.EmployeesList.FirstOrDefault(emp => emp.Username == UNtxt.Text);
@@ -29,16 +23,16 @@ namespace Gym_Managment
             {
                 if (validPassword != null)
                 {
-                    //MessageBox.Show("Logged in successfully!");
+                    MessageBox.Show("Logged in successfully!", "Log in", MessageBoxButtons.OK, MessageBoxIcon.Information);
                     Program.Username = UNtxt.Text;
                     new Main().Show();
                     this.Hide();
                 }
                 else
-                    MessageBox.Show("Password is wrong!");
+                    MessageBox.Show("Password is wrong!", "Log in", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
             else
-                MessageBox.Show("Username not found!");
+                MessageBox.Show("Username not found!", "Log in", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -52,10 +53,11 @@ namespace Gym_Managment
                 return;
             }
             Transactions NewTransaction = new Transactions(SelectedMemeber, amount, dateTimePicker1.Value);
-
+            Program.AllTransactions.Add(SelectedMemeber.FirstName + " " + SelectedMemeber.LastName + "~" + amount + "~" + dateTimePicker1.Value);
             SelectedMemeber.Transaction.Amount += amount;
 
             Program.TransactionsList.Add(NewTransaction);
+            File.WriteAllLines("Database//Transactions.txt", Program.AllTransactions.ToArray());
             MessageBox.Show("Bill has been added successfully!", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
             this.Close();
         }
