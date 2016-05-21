@@ -131,6 +131,12 @@
     <Compile Include="Members\MembersShowAll.Designer.cs">
       <DependentUpon>MembersShowAll.cs</DependentUpon>
     </Compile>
+    <Compile Include="Plan_Courses\Plan_CoursesShowAll.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Plan_Courses\Plan_CoursesShowAll.Designer.cs">
+      <DependentUpon>Plan_CoursesShowAll.cs</DependentUpon>
+    </Compile>
     <Compile Include="Plan_Courses\Plan_Courses.cs" />
     <Compile Include="Plan_Courses\Plan_CoursesForm.cs">
       <SubType>Form</SubType>
@@ -192,6 +198,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Members\MembersShowAll.resx">
       <DependentUpon>MembersShowAll.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Plan_Courses\Plan_CoursesShowAll.resx">
+      <DependentUpon>Plan_CoursesShowAll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Plan_Courses\Plan_CoursesForm.resx">
       <DependentUpon>Plan_CoursesForm.cs</DependentUpon>
