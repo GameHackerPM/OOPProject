@@ -34,5 +34,10 @@ namespace Gym_Managment
             else
                 MessageBox.Show("Username not found!", "Log in", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        private void Login_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

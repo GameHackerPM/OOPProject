@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
@@ -100,15 +101,26 @@ namespace Gym_Managment
                 return;
             }
             Instructor newcommer = new Instructor(fNameTxt.Text, LNameTxt.Text, AddressTxt.Text, Convert.ToInt32(contact_NoTxt.Text), Convert.ToDouble(SalaryTxt.Text), DateOfJoiningDT.Value, Schdule_Combo.SelectedIndex);
+            Program.AllInstructors.Add(fNameTxt.Text + "~" + LNameTxt.Text + "~" + AddressTxt.Text + "~" + contact_NoTxt.Text + "~" + Convert.ToDouble(SalaryTxt.Text) + "~" + Program.ToDateTimeInt(DateOfJoiningDT.Value) + "~" + Schdule_Combo.SelectedIndex);
             Program.InstructorsList.Add(newcommer);
             InCountLb.Text = Program.InstructorsList.Count.ToString();
             InstructorListBox.Items.Add(newcommer.FirstName + " " + newcommer.LastName);
-
+            File.WriteAllLines("Database//Instructors.txt", Program.AllInstructors.ToArray());
 
         }
 
         private void Edit_Btn_Click(object sender, EventArgs e)
         {
+            for (int i = 0; i < Program.AllInstructors.Count; i++)
+            {
+                string instructor = Program.AllInstructors[i].Trim();
+                string[] data = instructor.Split(new string[] { "~", /*" "*/ }, StringSplitOptions.RemoveEmptyEntries);
+                if ((string)InstructorListBox.SelectedItem == data[0] + " " + data[1])
+                {
+                    Program.AllInstructors[i] = fNameTxt.Text + "~" + LNameTxt.Text + "~" + AddressTxt.Text + "~" + contact_NoTxt.Text + "~" + Convert.ToDouble(SalaryTxt.Text) + "~" + Program.ToDateTimeInt(DateOfJoiningDT.Value) + "~" + Schdule_Combo.SelectedIndex;
+                    File.WriteAllLines("Database//Instructors.txt", Program.AllInstructors.ToArray());
+                }
+            }
             foreach (Instructor selectedInstructor in Program.InstructorsList)
             {
                 if ((string)InstructorListBox.SelectedItem == selectedInstructor.FirstName + " " + selectedInstructor.LastName)

@@ -123,3 +123,4 @@ E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_M
 E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym_Managment.Plan_CoursesShowAll.resources
 E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.csprojResolveAssemblyReference.cache
 E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\bin\Debug\Gym Managment.exe.config
+E:\Study\CS 212 (OOP)\OOPProject\Gym Managment\Gym Managment\obj\x86\Debug\Gym Managment.exe.licenses

@@ -66,6 +66,8 @@ namespace Gym_Managment
 
         private void saveBtn_Click(object sender, EventArgs e)
         {
+
+            //Save to Database
             for (int i = 0; i < Program.AllMembers.Count; i++)
             {
                 string member = Program.AllMembers[i].Trim();
@@ -76,6 +78,18 @@ namespace Gym_Managment
                     File.WriteAllLines("Database//Members.txt", Program.AllMembers.ToArray());
                 }
             }
+            for (int i = 0; i < Program.AllTransactions.Count; i++)
+            {
+                string transaction = Program.AllTransactions[i].Trim();
+                string[] data = transaction.Split(new string[] { "~", /*" "*/ }, StringSplitOptions.RemoveEmptyEntries);
+                if ((string)membersList.SelectedItem == data[0])
+                {
+                    Program.AllTransactions[i] = firstnameTxt.Text + " " + lastnameTxt.Text + "~" + data[1] + "~" + data[2];
+                    File.WriteAllLines("Database//Transactions.txt", Program.AllTransactions.ToArray());
+                }
+            }
+            /////////////////////////////
+
             foreach (Members selectedMember in Program.MembersList)
             {
                 if ((string)membersList.SelectedItem == selectedMember.FirstName + " " + selectedMember.LastName)
@@ -163,10 +177,12 @@ namespace Gym_Managment
             }
 
             Members NewMember = new Members(firstnameTxt.Text, lastnameTxt.Text, Convert.ToInt32(contactnoTxt.Text), addressTxt.Text, plantypeCombo.SelectedIndex + 1, double.Parse(amountTxt.Text.Replace("$", ""), CultureInfo.InvariantCulture), dateofjoiningDate.Value);
-            Program.AllMembers.Add(firstnameTxt.Text + "~" + lastnameTxt.Text + "~" + contactnoTxt.Text + "~" + addressTxt.Text + "~" + (plantypeCombo.SelectedIndex + 1) + "~" + double.Parse(amountTxt.Text.Replace("$", ""), CultureInfo.InvariantCulture) + "~" + Program.ToDateTimeInt(dateofjoiningDate.Value));
             Program.MembersList.Add(NewMember);
             membersCountLbl.Text = Members.GetCount().ToString();
             membersList.Items.Add(NewMember.FirstName + " " + NewMember.LastName);
+
+            //Save to Database
+            Program.AllMembers.Add(firstnameTxt.Text + "~" + lastnameTxt.Text + "~" + contactnoTxt.Text + "~" + addressTxt.Text + "~" + (plantypeCombo.SelectedIndex + 1) + "~" + double.Parse(amountTxt.Text.Replace("$", ""), CultureInfo.InvariantCulture) + "~" + Program.ToDateTimeInt(dateofjoiningDate.Value));
             File.WriteAllLines("Database//Members.txt", Program.AllMembers.ToArray());
         }
 

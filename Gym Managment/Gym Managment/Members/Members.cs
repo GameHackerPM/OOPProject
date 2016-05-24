@@ -8,7 +8,7 @@ namespace Gym_Managment
     public class Members
     {
         #region Properties
-        private static int LastID = Properties.Settings.Default.LastMember;
+        private static int LastID = 1;
         public int ID { get; private set; }
         public string FirstName, LastName, Address;
         public int Contact_No, PlanType;
@@ -28,8 +28,6 @@ namespace Gym_Managment
             this.DateOfJoining = DateOfJoining;
             Contact_No = ContactNumber;
             Transaction = new Transactions(this);
-            Properties.Settings.Default.LastMember = LastID;
-            Properties.Settings.Default.Save();
         }
 
         private int GetNextID()

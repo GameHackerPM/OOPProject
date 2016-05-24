@@ -7,7 +7,7 @@ namespace Gym_Managment
 {
     public class Plan_Courses
     {
-        private static int lastID = Properties.Settings.Default.LastPlan_Source;
+        private static int lastID = 1;
         public int ID { get; private set; }
         public string planname;
         public int plantype;
@@ -21,8 +21,6 @@ namespace Gym_Managment
             this.plantype = plantype;
             this.amount = amount;
             this.details = details;
-            Properties.Settings.Default.LastPlan_Source = lastID;
-            Properties.Settings.Default.Save();
         }
 
         private int GetNextID()

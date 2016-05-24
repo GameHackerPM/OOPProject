@@ -7,7 +7,7 @@ namespace Gym_Managment
 {
     public class Equipment
     {
-        private static int LastID = Properties.Settings.Default.LastEquipment;
+        private static int LastID = 1;
         public int ID { get; private set; }
         public string NameOfInstrument;
         public string Company;
@@ -24,8 +24,6 @@ namespace Gym_Managment
             total_price = Get_Total_price(Total_Quantity, Price_per_Quantity);
             Date = date;
             Company = name_of_company;
-            Properties.Settings.Default.LastEquipment = LastID;
-            Properties.Settings.Default.Save();
         }
 
         private int GetNextID()

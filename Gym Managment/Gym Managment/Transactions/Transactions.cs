@@ -8,7 +8,7 @@ namespace Gym_Managment
     public class Transactions
     {
         #region Properties
-        private static int LastID = Properties.Settings.Default.LastTransaction;
+        private static int LastID = 1;
         public int ID { get; private set; }
         public string MemberName;
         public int MemberID;
@@ -36,8 +36,6 @@ namespace Gym_Managment
             this.Member = Member;
             MemberName = Member.FirstName + " " + Member.LastName;
             MemberID = Member.ID;
-            Properties.Settings.Default.LastTransaction = LastID;
-            Properties.Settings.Default.Save();
         }
 
         public Transactions(Members Member, double Amount, DateTime DateOfPay)
@@ -48,8 +46,6 @@ namespace Gym_Managment
             MemberID = Member.ID;
             this.Amount = Amount;
             this.DateOfPay = DateOfPay;
-            Properties.Settings.Default.LastTransaction = LastID;
-            Properties.Settings.Default.Save();
         }
 
         private int GetNextID()

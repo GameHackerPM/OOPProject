@@ -182,6 +182,7 @@
     <EmbeddedResource Include="Equipments\equipmentShow.resx">
       <DependentUpon>equipmentShow.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Suppliers\SuppliersForm.resx">
       <DependentUpon>SuppliersForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -243,6 +244,7 @@
     <None Include="Resources\Logo.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\Logo1.png" />
     <Content Include="TrayICON.ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -71,7 +71,6 @@
             this.showAllToolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.aboutStrip = new System.Windows.Forms.ToolStripMenuItem();
-            this.settingsBtn = new System.Windows.Forms.Button();
             this.exitBtn = new System.Windows.Forms.Button();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
@@ -275,7 +274,7 @@
             // 
             this.addToolStripMenuItem1.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Text;
             this.addToolStripMenuItem1.Name = "addToolStripMenuItem1";
-            this.addToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
+            this.addToolStripMenuItem1.Size = new System.Drawing.Size(136, 24);
             this.addToolStripMenuItem1.Text = "Control";
             this.addToolStripMenuItem1.TextDirection = System.Windows.Forms.ToolStripTextDirection.Horizontal;
             this.addToolStripMenuItem1.Click += new System.EventHandler(this.addToolStripMenuItem1_Click);
@@ -283,12 +282,12 @@
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(149, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(133, 6);
             // 
             // showAllToolStripMenuItem1
             // 
             this.showAllToolStripMenuItem1.Name = "showAllToolStripMenuItem1";
-            this.showAllToolStripMenuItem1.Size = new System.Drawing.Size(152, 24);
+            this.showAllToolStripMenuItem1.Size = new System.Drawing.Size(136, 24);
             this.showAllToolStripMenuItem1.Text = "Show All";
             this.showAllToolStripMenuItem1.Click += new System.EventHandler(this.showAllToolStripMenuItem1_Click);
             // 
@@ -363,7 +362,7 @@
             // addToolStripMenuItem4
             // 
             this.addToolStripMenuItem4.Name = "addToolStripMenuItem4";
-            this.addToolStripMenuItem4.Size = new System.Drawing.Size(152, 24);
+            this.addToolStripMenuItem4.Size = new System.Drawing.Size(136, 24);
             this.addToolStripMenuItem4.Text = "Control";
             this.addToolStripMenuItem4.Click += new System.EventHandler(this.addToolStripMenuItem4_Click);
             // 
@@ -423,21 +422,10 @@
             this.aboutStrip.Text = "About";
             this.aboutStrip.Click += new System.EventHandler(this.aboutStrip_Click);
             // 
-            // settingsBtn
-            // 
-            this.settingsBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.settingsBtn.Location = new System.Drawing.Point(12, 459);
-            this.settingsBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.settingsBtn.Name = "settingsBtn";
-            this.settingsBtn.Size = new System.Drawing.Size(189, 52);
-            this.settingsBtn.TabIndex = 7;
-            this.settingsBtn.Text = "Settings";
-            this.settingsBtn.UseVisualStyleBackColor = true;
-            // 
             // exitBtn
             // 
             this.exitBtn.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitBtn.Location = new System.Drawing.Point(12, 517);
+            this.exitBtn.Location = new System.Drawing.Point(12, 457);
             this.exitBtn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.exitBtn.Name = "exitBtn";
             this.exitBtn.Size = new System.Drawing.Size(189, 52);
@@ -457,7 +445,6 @@
             // 
             // pictureBox1
             // 
-            this.pictureBox1.Image = global::Gym_Managment.Properties.Resources.Logo;
             this.pictureBox1.Location = new System.Drawing.Point(208, 60);
             this.pictureBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.pictureBox1.Name = "pictureBox1";
@@ -507,7 +494,6 @@
             this.Controls.Add(this.EmployeeBtn);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.exitBtn);
-            this.Controls.Add(this.settingsBtn);
             this.Controls.Add(this.transactionBtn);
             this.Controls.Add(this.supplierBtn);
             this.Controls.Add(this.equipmentsBtn);
@@ -572,7 +558,6 @@
         private System.Windows.Forms.ToolStripMenuItem showAllToolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem helpToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutStrip;
-        private System.Windows.Forms.Button settingsBtn;
         private System.Windows.Forms.Button exitBtn;
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.NotifyIcon notifyIcon1;

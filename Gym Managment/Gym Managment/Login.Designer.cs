@@ -42,7 +42,7 @@
             // 
             // UNtxt
             // 
-            this.UNtxt.Location = new System.Drawing.Point(140, 67);
+            this.UNtxt.Location = new System.Drawing.Point(139, 67);
             this.UNtxt.Name = "UNtxt";
             this.UNtxt.Size = new System.Drawing.Size(231, 22);
             this.UNtxt.TabIndex = 0;
@@ -51,7 +51,7 @@
             // 
             // PWtxt
             // 
-            this.PWtxt.Location = new System.Drawing.Point(140, 119);
+            this.PWtxt.Location = new System.Drawing.Point(139, 119);
             this.PWtxt.Name = "PWtxt";
             this.PWtxt.Size = new System.Drawing.Size(231, 22);
             this.PWtxt.TabIndex = 1;
@@ -79,7 +79,7 @@
             // 
             // LoginBtn
             // 
-            this.LoginBtn.Location = new System.Drawing.Point(159, 177);
+            this.LoginBtn.Location = new System.Drawing.Point(139, 173);
             this.LoginBtn.Name = "LoginBtn";
             this.LoginBtn.Size = new System.Drawing.Size(159, 41);
             this.LoginBtn.TabIndex = 4;
@@ -105,9 +105,9 @@
             // 
             this.pictureBox1.Image = global::Gym_Managment.Properties.Resources.Logo;
             this.pictureBox1.InitialImage = global::Gym_Managment.Properties.Resources.Logo;
-            this.pictureBox1.Location = new System.Drawing.Point(12, 62);
+            this.pictureBox1.Location = new System.Drawing.Point(11, 62);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(212, 241);
+            this.pictureBox1.Size = new System.Drawing.Size(213, 241);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 8;
             this.pictureBox1.TabStop = false;
@@ -125,6 +125,7 @@
             this.Name = "Login";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Login";
+            this.Load += new System.EventHandler(this.Login_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();

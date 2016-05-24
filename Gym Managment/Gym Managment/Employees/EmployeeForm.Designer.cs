@@ -117,6 +117,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.Color.Black;
             this.label10.Location = new System.Drawing.Point(413, 442);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(60, 17);
@@ -135,6 +136,7 @@
             // label8
             // 
             this.label8.AutoSize = true;
+            this.label8.ForeColor = System.Drawing.Color.Black;
             this.label8.Location = new System.Drawing.Point(359, 394);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(114, 17);
@@ -153,6 +155,7 @@
             // label7
             // 
             this.label7.AutoSize = true;
+            this.label7.ForeColor = System.Drawing.Color.Black;
             this.label7.Location = new System.Drawing.Point(405, 287);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(68, 17);
@@ -175,6 +178,7 @@
             // label6
             // 
             this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.Color.Black;
             this.label6.Location = new System.Drawing.Point(353, 244);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(118, 17);
@@ -194,6 +198,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Black;
             this.label5.Location = new System.Drawing.Point(391, 139);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(84, 17);
@@ -213,6 +218,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Black;
             this.label4.Location = new System.Drawing.Point(389, 105);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(84, 17);
@@ -232,6 +238,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Black;
             this.label3.Location = new System.Drawing.Point(439, 65);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 17);
@@ -245,7 +252,7 @@
             this.groupBox1.Controls.Add(this.EmpCountLb);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Controls.Add(this.label2);
-            this.groupBox1.Font = new System.Drawing.Font("Tahoma", 9.75F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox1.Font = new System.Drawing.Font("Tahoma", 9F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.ForeColor = System.Drawing.Color.Maroon;
             this.groupBox1.Location = new System.Drawing.Point(15, 14);
             this.groupBox1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -273,7 +280,7 @@
             this.EmployeesListBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.EmployeesListBox.FormattingEnabled = true;
             this.EmployeesListBox.ItemHeight = 18;
-            this.EmployeesListBox.Location = new System.Drawing.Point(5, 117);
+            this.EmployeesListBox.Location = new System.Drawing.Point(13, 117);
             this.EmployeesListBox.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.EmployeesListBox.Name = "EmployeesListBox";
             this.EmployeesListBox.Size = new System.Drawing.Size(235, 328);
@@ -296,7 +303,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(128)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.label1.Location = new System.Drawing.Point(49, 96);
+            this.label1.Location = new System.Drawing.Point(63, 96);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(123, 18);
             this.label1.TabIndex = 1;
@@ -308,7 +315,7 @@
             this.label2.ForeColor = System.Drawing.Color.Black;
             this.label2.Location = new System.Drawing.Point(13, 30);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(165, 21);
+            this.label2.Size = new System.Drawing.Size(140, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Employee Count : ";
             // 
@@ -324,6 +331,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
+            this.label9.ForeColor = System.Drawing.Color.Black;
             this.label9.Location = new System.Drawing.Point(391, 206);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(77, 17);
@@ -342,6 +350,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
+            this.label11.ForeColor = System.Drawing.Color.Black;
             this.label11.Location = new System.Drawing.Point(389, 172);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(81, 17);
@@ -352,6 +361,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(1007, 583);
             this.Controls.Add(this.passwordTxt);
             this.Controls.Add(this.label9);
