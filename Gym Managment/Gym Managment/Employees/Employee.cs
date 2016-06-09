@@ -7,7 +7,7 @@ namespace Gym_Managment
 {
     class Employee
     {
-        private static int LastID = 1;
+        private static int LastID = 1; //edit
         public int ID {get; private set; }
         public string FirstName, LastName, Address;
         public string Username, Password; //ADD this !
